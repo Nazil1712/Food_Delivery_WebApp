@@ -75,6 +75,7 @@ root.render(parent) */
 */
 
 
+
 // See how difficult it is to manage That's why there is need of JSX (see below)
 
 /* const p1 = 

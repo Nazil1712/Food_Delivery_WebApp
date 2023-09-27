@@ -1,0 +1,30 @@
+{
+  "name": "hello_react",
+  "version": "1.0.0",
+  "description": "This is Hello React created By Nazil",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazil1712/Hello_React.git"
+  },
+  "keywords": [],
+  "author": "Nazil N. Dhalwala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nazil1712/Hello_React/issues"
+  },
+  "homepage": "https://github.com/Nazil1712/Hello_React#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":[
+    "last 2 version"
+  ]
+}
