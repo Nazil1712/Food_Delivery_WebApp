@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is Hello React created By Nazil",
   "scripts": {
-    "start":"parcel 5_L3.html",
-    "build":"parcel build 5_L3.html",
+    "start": "parcel 5_L3.html",
+    "build": "parcel build 5_L3.html",
     "test": "jest"
   },
   "repository": {
@@ -19,14 +19,23 @@
   },
   "homepage": "https://github.com/Nazil1712/Hello_React#readme",
   "devDependencies": {
+    "@babel/core": "^7.23.0",
     "parcel": "^2.9.3",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "babel-plugin-macros": "^3.1.0",
+    "font-awesome": "^4.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-font-awesome-5": "^0.2.2"
   },
-  "browserlist":[
+  "browserlist": [
     "last 2 version"
   ]
 }
