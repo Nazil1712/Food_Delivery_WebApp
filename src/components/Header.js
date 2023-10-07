@@ -9,8 +9,21 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { LOGO_URL } from "../utils/constants";
+import { useState } from "react";
 
 const Header = () => {
+
+  const [btnName, setBtnName] = useState("Sign In");
+
+  const handleClick = () =>{
+    if(btnName == "Sign In"){
+      setBtnName("Sign Out")
+    }
+    else{
+      setBtnName("Sign In")
+    }
+  }
+
   return (
     <div className="header">
       <div className="header-container">
@@ -41,8 +54,8 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#">
-                <FontAwesomeIcon icon={faSignIn} /> Sign In
+              <a href="#" onClick={handleClick}>
+                <FontAwesomeIcon icon={faSignIn} /> {btnName}
               </a>
             </li>
             <li>

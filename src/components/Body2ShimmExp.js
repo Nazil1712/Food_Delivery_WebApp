@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import { resData } from "../utils/mockData";
 import { RES_IMG_URL } from "../utils/constants";
+import BodyShimmer from "./BodyShimmer";
 
 const RestauratCard = ({
   foodImg,
@@ -29,52 +30,43 @@ const RestauratCard = ({
   );
 };
 
-const Body = () => {
-  const [resStateData, setresStateData] = useState(resData);
-  const [searchText, setSearchText] = useState("");
+const Body2ShimmExp = () => {
+  const [resStateData, setresStateData] = useState([]);
 
-  const handleRate = () => {
-    const topRated = resData.filter((v, i) => v.info.avgRating > 4.0);
+  const topRated = resStateData.filter((v, i) => v.info.avgRating > 4.2);
+
+  const handleClick = () => {
     setresStateData(topRated);
   };
 
-  const handleSearch = () => {
-    const filteredRestaurant = resData.filter((v, i, arr) =>
-      v.info.name.toLowerCase().includes(searchText.toLowerCase())
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.022505&lng=72.5713621&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
-    setresStateData(filteredRestaurant);
+
+    const json = await data.json();
+    // console.log(json);
+    // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
+    setresStateData(
+      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+    );
   };
 
-  const handleFastDelv = () => {
-    const fastRestaurant = resData.filter((v,i,arr)=>v.info.sla.deliveryTime<20)
-    setresStateData(fastRestaurant)
-  };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  return (
+  // if(resStateData.length ==0){
+  //   return <BodyShimmer/>
+  // }
+
+  return resStateData.length == 0 ? (
+    <BodyShimmer />
+  ) : (
     <div className="body">
-      <div className="body-heading">
-        <p>Restaurants with online food delivery</p>
-      </div>
       <div className="filter">
-        <input
-          type="text"
-          className="search-box"
-          placeholder="Search here"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-          onKeyDown={handleSearch}
-          onKeyUp={handleSearch}
-        ></input>
-        <FontAwesomeIcon
-          icon={faSearch}
-          className="search-icon"
-          onClick={handleSearch}
-        />
-        <button className="filter-btn filter-btn1" onClick={handleRate}>
-          Ratings 4.0+
-        </button>
-        <button className="filter-btn filter-btn2" onClick={handleFastDelv}>
-          Fast Delivery
+        <button className="filter-btn" onClick={handleClick}>
+          Top Rated Restaurants
         </button>
       </div>
       <div className="res-container">
@@ -93,4 +85,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Body2ShimmExp;
