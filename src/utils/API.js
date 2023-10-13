@@ -1,4 +1,4 @@
-// 20231007100234
+// 20231008093215
 // https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
 
 [{
@@ -6,13 +6,11 @@
   "data": {
     "statusMessage": "done successfully",
     "pageOffset": {
-      "nextOffset": "COVCELQ4KICg156X1rP9cDCnEzgB",
+      "nextOffset": "COVCELQ4KIDw/b3x2NnkSDCnEzgB",
       "widgetOffset": {
         "NewListingView_Topical_Fullbleed": "",
-        "NewListingView_Topical_Version2": "",
         "NewListingView_category_bar_chicletranking_TwoRows": "",
         "NewListingView_category_bar_chicletranking_TwoRows_Rendition": "",
-        "Restaurant_Group_WebView_PB_Theme": "",
         "Restaurant_Group_WebView_SEO_PB_Theme": "",
         "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo": "10",
         "inlineFacetFilter": "",
@@ -88,10 +86,10 @@
             "imageGridCards": {
               "info": [
                 {
-                  "id": "1302937",
-                  "imageId": "rng/md/carousel/production/ca7347f1e49fad1dbe03d1dfa4aa02d2",
+                  "id": "1138899",
+                  "imageId": "rng/md/carousel/production/23d24fb5e3c48229c1ad982e43283ef0",
                   "action": {
-                    "link": "https://www.swiggy.com/collections/96595?collection_id=96595&tags=layout_ux4&type=rcv2",
+                    "link": "https://www.swiggy.com/collections/89290?collection_id=89290&tags=layout_ux4&type=rcv2",
                     "text": "Holi",
                     "type": "WEBLINK"
                   },
@@ -100,44 +98,25 @@
                     "altText": "Get 60% off to welcome you back",
                     "altTextCta": "Order Now"
                   },
-                  "entityId": "96595",
+                  "entityId": "89290",
                   "frequencyCapping": {
                     
                   }
                 },
                 {
-                  "id": "1306069",
-                  "imageId": "rng/md/carousel/production/74f90a55a26123cadfc476bc9af44846",
+                  "id": "1309014",
+                  "imageId": "rng/md/carousel/production/7ee05033865cfdd68646fb3e22e20685",
                   "action": {
-                    "link": "https://www.swiggy.com/menu/452635",
-                    "text": "pizza hut",
+                    "link": "http://swiggy.com/menu?restaurant_id=111733&uuid=95da0295-f7ae-4ce2-ab88-08e7796ac0c9",
+                    "text": "Brand Card",
                     "type": "WEBLINK"
                   },
                   "entityType": "BANNER",
                   "accessibility": {
-                    "altText": "pizza hut",
-                    "altTextCta": "Order Now"
+                    "altText": "Brands with Offers",
+                    "altTextCta": "open"
                   },
-                  "entityId": "452635",
-                  "frequencyCapping": {
-                    
-                  },
-                  "isManualAds": true
-                },
-                {
-                  "id": "1306058",
-                  "imageId": "rng/md/carousel/production/81719abab3e91d20d3f85fac1289bea6",
-                  "action": {
-                    "link": "https://www.swiggy.com/menu/654221",
-                    "text": "La pino",
-                    "type": "WEBLINK"
-                  },
-                  "entityType": "BANNER",
-                  "accessibility": {
-                    "altText": "La Pino'z PIzza",
-                    "altTextCta": "Order Now"
-                  },
-                  "entityId": "654221",
+                  "entityId": "111733",
                   "frequencyCapping": {
                     
                   },
@@ -160,6 +139,25 @@
                   "frequencyCapping": {
                     
                   }
+                },
+                {
+                  "id": "1308794",
+                  "imageId": "rng/md/carousel/production/aa0f1b9a69fe771c137d7269155f45a4",
+                  "action": {
+                    "link": "https://www.swiggy.com/menu/573379",
+                    "text": "Burger King",
+                    "type": "WEBLINK"
+                  },
+                  "entityType": "BANNER",
+                  "accessibility": {
+                    "altText": "Burger King",
+                    "altTextCta": "Order Now"
+                  },
+                  "entityId": "573379",
+                  "frequencyCapping": {
+                    
+                  },
+                  "isManualAds": true
                 },
                 {
                   "id": "1102493",
@@ -199,10 +197,10 @@
                 "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
                 "info": [
                   {
-                    "id": "1302937",
-                    "imageId": "rng/md/carousel/production/ca7347f1e49fad1dbe03d1dfa4aa02d2",
+                    "id": "1138899",
+                    "imageId": "rng/md/carousel/production/23d24fb5e3c48229c1ad982e43283ef0",
                     "action": {
-                      "link": "https://www.swiggy.com/collections/96595?collection_id=96595&tags=layout_ux4&type=rcv2",
+                      "link": "https://www.swiggy.com/collections/89290?collection_id=89290&tags=layout_ux4&type=rcv2",
                       "text": "Holi",
                       "type": "WEBLINK"
                     },
@@ -211,44 +209,25 @@
                       "altText": "Get 60% off to welcome you back",
                       "altTextCta": "Order Now"
                     },
-                    "entityId": "96595",
+                    "entityId": "89290",
                     "frequencyCapping": {
                       
                     }
                   },
                   {
-                    "id": "1306069",
-                    "imageId": "rng/md/carousel/production/74f90a55a26123cadfc476bc9af44846",
+                    "id": "1309014",
+                    "imageId": "rng/md/carousel/production/7ee05033865cfdd68646fb3e22e20685",
                     "action": {
-                      "link": "https://www.swiggy.com/menu/452635",
-                      "text": "pizza hut",
+                      "link": "http://swiggy.com/menu?restaurant_id=111733&uuid=95da0295-f7ae-4ce2-ab88-08e7796ac0c9",
+                      "text": "Brand Card",
                       "type": "WEBLINK"
                     },
                     "entityType": "BANNER",
                     "accessibility": {
-                      "altText": "pizza hut",
-                      "altTextCta": "Order Now"
+                      "altText": "Brands with Offers",
+                      "altTextCta": "open"
                     },
-                    "entityId": "452635",
-                    "frequencyCapping": {
-                      
-                    },
-                    "isManualAds": true
-                  },
-                  {
-                    "id": "1306058",
-                    "imageId": "rng/md/carousel/production/81719abab3e91d20d3f85fac1289bea6",
-                    "action": {
-                      "link": "https://www.swiggy.com/menu/654221",
-                      "text": "La pino",
-                      "type": "WEBLINK"
-                    },
-                    "entityType": "BANNER",
-                    "accessibility": {
-                      "altText": "La Pino'z PIzza",
-                      "altTextCta": "Order Now"
-                    },
-                    "entityId": "654221",
+                    "entityId": "111733",
                     "frequencyCapping": {
                       
                     },
@@ -271,6 +250,25 @@
                     "frequencyCapping": {
                       
                     }
+                  },
+                  {
+                    "id": "1308794",
+                    "imageId": "rng/md/carousel/production/aa0f1b9a69fe771c137d7269155f45a4",
+                    "action": {
+                      "link": "https://www.swiggy.com/menu/573379",
+                      "text": "Burger King",
+                      "type": "WEBLINK"
+                    },
+                    "entityType": "BANNER",
+                    "accessibility": {
+                      "altText": "Burger King",
+                      "altTextCta": "Order Now"
+                    },
+                    "entityId": "573379",
+                    "frequencyCapping": {
+                      
+                    },
+                    "isManualAds": true
                   },
                   {
                     "id": "1102493",
@@ -354,60 +352,6 @@
             "imageGridCards": {
               "info": [
                 {
-                  "id": "750230",
-                  "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Samosas.png",
-                  "action": {
-                    "link": "https://www.swiggy.com/collections/80397?collection_id=80397&tags=layout_BAU_Contextual%2Csamosa&type=rcv2",
-                    "text": "Samosa",
-                    "type": "WEBLINK"
-                  },
-                  "entityType": "BANNER",
-                  "accessibility": {
-                    "altText": "restaurants curated for samosa",
-                    "altTextCta": "open"
-                  },
-                  "entityId": "80397",
-                  "frequencyCapping": {
-                    
-                  }
-                },
-                {
-                  "id": "750203",
-                  "imageId": "v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Paratha.png",
-                  "action": {
-                    "link": "https://www.swiggy.com/collections/80476?collection_id=80476&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2",
-                    "text": "Paratha",
-                    "type": "WEBLINK"
-                  },
-                  "entityType": "BANNER",
-                  "accessibility": {
-                    "altText": "restaurants curated for paratha",
-                    "altTextCta": "open"
-                  },
-                  "entityId": "80476",
-                  "frequencyCapping": {
-                    
-                  }
-                },
-                {
-                  "id": "750235",
-                  "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Sandwich.png",
-                  "action": {
-                    "link": "https://www.swiggy.com/collections/83667?collection_id=83667&tags=layout_CCS_Sandwiches&type=rcv2",
-                    "text": "Sandwich",
-                    "type": "WEBLINK"
-                  },
-                  "entityType": "BANNER",
-                  "accessibility": {
-                    "altText": "restaurants curated for sandwich",
-                    "altTextCta": "open"
-                  },
-                  "entityId": "swiggy://collectionV2?collection_id=83667&tags=layout_CCS_Sandwiches",
-                  "frequencyCapping": {
-                    
-                  }
-                },
-                {
                   "id": "750644",
                   "imageId": "v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Idli.png",
                   "action": {
@@ -426,19 +370,19 @@
                   }
                 },
                 {
-                  "id": "750123",
-                  "imageId": "v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Dhokla.png",
+                  "id": "750230",
+                  "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Samosas.png",
                   "action": {
-                    "link": "https://www.swiggy.com/collections/80423?collection_id=80423&tags=layout_BAU_Contextual%2Cdhokla&type=rcv2",
-                    "text": "Dhokla",
+                    "link": "https://www.swiggy.com/collections/80397?collection_id=80397&tags=layout_BAU_Contextual%2Csamosa&type=rcv2",
+                    "text": "Samosa",
                     "type": "WEBLINK"
                   },
                   "entityType": "BANNER",
                   "accessibility": {
-                    "altText": "restaurants curated for dhokla",
+                    "altText": "restaurants curated for samosa",
                     "altTextCta": "open"
                   },
-                  "entityId": "80423",
+                  "entityId": "80397",
                   "frequencyCapping": {
                     
                   }
@@ -462,19 +406,55 @@
                   }
                 },
                 {
-                  "id": "750258",
-                  "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Thepla.png",
+                  "id": "750203",
+                  "imageId": "v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Paratha.png",
                   "action": {
-                    "link": "https://www.swiggy.com/collections/80409?collection_id=80409&tags=layout_BAU_Contextual%2Cthepla&type=rcv2",
-                    "text": "Thepla",
+                    "link": "https://www.swiggy.com/collections/80476?collection_id=80476&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2",
+                    "text": "Paratha",
                     "type": "WEBLINK"
                   },
                   "entityType": "BANNER",
                   "accessibility": {
-                    "altText": "restaurant curated for thepla",
+                    "altText": "restaurants curated for paratha",
                     "altTextCta": "open"
                   },
-                  "entityId": "80409",
+                  "entityId": "80476",
+                  "frequencyCapping": {
+                    
+                  }
+                },
+                {
+                  "id": "750123",
+                  "imageId": "v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Dhokla.png",
+                  "action": {
+                    "link": "https://www.swiggy.com/collections/80423?collection_id=80423&tags=layout_BAU_Contextual%2Cdhokla&type=rcv2",
+                    "text": "Dhokla",
+                    "type": "WEBLINK"
+                  },
+                  "entityType": "BANNER",
+                  "accessibility": {
+                    "altText": "restaurants curated for dhokla",
+                    "altTextCta": "open"
+                  },
+                  "entityId": "80423",
+                  "frequencyCapping": {
+                    
+                  }
+                },
+                {
+                  "id": "750235",
+                  "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Sandwich.png",
+                  "action": {
+                    "link": "https://www.swiggy.com/collections/83667?collection_id=83667&tags=layout_CCS_Sandwiches&type=rcv2",
+                    "text": "Sandwich",
+                    "type": "WEBLINK"
+                  },
+                  "entityType": "BANNER",
+                  "accessibility": {
+                    "altText": "restaurants curated for sandwich",
+                    "altTextCta": "open"
+                  },
+                  "entityId": "swiggy://collectionV2?collection_id=83667&tags=layout_CCS_Sandwiches",
                   "frequencyCapping": {
                     
                   }
@@ -493,6 +473,42 @@
                     "altTextCta": "open"
                   },
                   "entityId": "swiggy://collectionV2?collection_id=80426&tags=layout_CCS_Dosa",
+                  "frequencyCapping": {
+                    
+                  }
+                },
+                {
+                  "id": "750258",
+                  "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Thepla.png",
+                  "action": {
+                    "link": "https://www.swiggy.com/collections/80409?collection_id=80409&tags=layout_BAU_Contextual%2Cthepla&type=rcv2",
+                    "text": "Thepla",
+                    "type": "WEBLINK"
+                  },
+                  "entityType": "BANNER",
+                  "accessibility": {
+                    "altText": "restaurant curated for thepla",
+                    "altTextCta": "open"
+                  },
+                  "entityId": "80409",
+                  "frequencyCapping": {
+                    
+                  }
+                },
+                {
+                  "id": "749761",
+                  "imageId": "v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Khichdi.png",
+                  "action": {
+                    "link": "https://www.swiggy.com/collections/80456?collection_id=80456&tags=layout_BAU_Contextual%2Ckhichdi&type=rcv2",
+                    "text": "Khichdi",
+                    "type": "WEBLINK"
+                  },
+                  "entityType": "BANNER",
+                  "accessibility": {
+                    "altText": "restaurants curated for khicdhi",
+                    "altTextCta": "open"
+                  },
+                  "entityId": "80456",
                   "frequencyCapping": {
                     
                   }
@@ -570,24 +586,6 @@
                   }
                 },
                 {
-                  "id": "749791",
-                  "imageId": "v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Pakodas.png",
-                  "action": {
-                    "link": "https://www.swiggy.com/collections/80470?collection_id=80470&tags=layout_BAU_Contextual%2Cpakoda&type=rcv2",
-                    "text": "Pakoda",
-                    "type": "WEBLINK"
-                  },
-                  "entityType": "BANNER",
-                  "accessibility": {
-                    "altText": "restaurant curated for pakoda",
-                    "altTextCta": "open"
-                  },
-                  "entityId": "80470",
-                  "frequencyCapping": {
-                    
-                  }
-                },
-                {
                   "id": "750239",
                   "imageId": "v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Shakes.png",
                   "action": {
@@ -624,37 +622,19 @@
                   }
                 },
                 {
-                  "id": "749761",
-                  "imageId": "v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Khichdi.png",
+                  "id": "749791",
+                  "imageId": "v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Pakodas.png",
                   "action": {
-                    "link": "https://www.swiggy.com/collections/80456?collection_id=80456&tags=layout_BAU_Contextual%2Ckhichdi&type=rcv2",
-                    "text": "Khichdi",
+                    "link": "https://www.swiggy.com/collections/80470?collection_id=80470&tags=layout_BAU_Contextual%2Cpakoda&type=rcv2",
+                    "text": "Pakoda",
                     "type": "WEBLINK"
                   },
                   "entityType": "BANNER",
                   "accessibility": {
-                    "altText": "restaurants curated for khicdhi",
+                    "altText": "restaurant curated for pakoda",
                     "altTextCta": "open"
                   },
-                  "entityId": "80456",
-                  "frequencyCapping": {
-                    
-                  }
-                },
-                {
-                  "id": "750572",
-                  "imageId": "v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Pure_Veg.png",
-                  "action": {
-                    "link": "https://www.swiggy.com/collections/80439?collection_id=80439&tags=layout_CCS_PureVeg&type=rcv2",
-                    "text": "Pure Veg",
-                    "type": "WEBLINK"
-                  },
-                  "entityType": "BANNER",
-                  "accessibility": {
-                    "altText": "restaurants curated for veg",
-                    "altTextCta": "open"
-                  },
-                  "entityId": "swiggy://collectionV2?collection_id=80439&tags=layout_CCS_PureVeg",
+                  "entityId": "80470",
                   "frequencyCapping": {
                     
                   }
@@ -673,6 +653,24 @@
                     "altTextCta": "open"
                   },
                   "entityId": "80427",
+                  "frequencyCapping": {
+                    
+                  }
+                },
+                {
+                  "id": "750572",
+                  "imageId": "v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Pure_Veg.png",
+                  "action": {
+                    "link": "https://www.swiggy.com/collections/80439?collection_id=80439&tags=layout_CCS_PureVeg&type=rcv2",
+                    "text": "Pure Veg",
+                    "type": "WEBLINK"
+                  },
+                  "entityType": "BANNER",
+                  "accessibility": {
+                    "altText": "restaurants curated for veg",
+                    "altTextCta": "open"
+                  },
+                  "entityId": "swiggy://collectionV2?collection_id=80439&tags=layout_CCS_PureVeg",
                   "frequencyCapping": {
                     
                   }
@@ -733,60 +731,6 @@
                 "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
                 "info": [
                   {
-                    "id": "750230",
-                    "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Samosas.png",
-                    "action": {
-                      "link": "https://www.swiggy.com/collections/80397?collection_id=80397&tags=layout_BAU_Contextual%2Csamosa&type=rcv2",
-                      "text": "Samosa",
-                      "type": "WEBLINK"
-                    },
-                    "entityType": "BANNER",
-                    "accessibility": {
-                      "altText": "restaurants curated for samosa",
-                      "altTextCta": "open"
-                    },
-                    "entityId": "80397",
-                    "frequencyCapping": {
-                      
-                    }
-                  },
-                  {
-                    "id": "750203",
-                    "imageId": "v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Paratha.png",
-                    "action": {
-                      "link": "https://www.swiggy.com/collections/80476?collection_id=80476&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2",
-                      "text": "Paratha",
-                      "type": "WEBLINK"
-                    },
-                    "entityType": "BANNER",
-                    "accessibility": {
-                      "altText": "restaurants curated for paratha",
-                      "altTextCta": "open"
-                    },
-                    "entityId": "80476",
-                    "frequencyCapping": {
-                      
-                    }
-                  },
-                  {
-                    "id": "750235",
-                    "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Sandwich.png",
-                    "action": {
-                      "link": "https://www.swiggy.com/collections/83667?collection_id=83667&tags=layout_CCS_Sandwiches&type=rcv2",
-                      "text": "Sandwich",
-                      "type": "WEBLINK"
-                    },
-                    "entityType": "BANNER",
-                    "accessibility": {
-                      "altText": "restaurants curated for sandwich",
-                      "altTextCta": "open"
-                    },
-                    "entityId": "swiggy://collectionV2?collection_id=83667&tags=layout_CCS_Sandwiches",
-                    "frequencyCapping": {
-                      
-                    }
-                  },
-                  {
                     "id": "750644",
                     "imageId": "v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Idli.png",
                     "action": {
@@ -805,19 +749,19 @@
                     }
                   },
                   {
-                    "id": "750123",
-                    "imageId": "v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Dhokla.png",
+                    "id": "750230",
+                    "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Samosas.png",
                     "action": {
-                      "link": "https://www.swiggy.com/collections/80423?collection_id=80423&tags=layout_BAU_Contextual%2Cdhokla&type=rcv2",
-                      "text": "Dhokla",
+                      "link": "https://www.swiggy.com/collections/80397?collection_id=80397&tags=layout_BAU_Contextual%2Csamosa&type=rcv2",
+                      "text": "Samosa",
                       "type": "WEBLINK"
                     },
                     "entityType": "BANNER",
                     "accessibility": {
-                      "altText": "restaurants curated for dhokla",
+                      "altText": "restaurants curated for samosa",
                       "altTextCta": "open"
                     },
-                    "entityId": "80423",
+                    "entityId": "80397",
                     "frequencyCapping": {
                       
                     }
@@ -841,19 +785,55 @@
                     }
                   },
                   {
-                    "id": "750258",
-                    "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Thepla.png",
+                    "id": "750203",
+                    "imageId": "v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Paratha.png",
                     "action": {
-                      "link": "https://www.swiggy.com/collections/80409?collection_id=80409&tags=layout_BAU_Contextual%2Cthepla&type=rcv2",
-                      "text": "Thepla",
+                      "link": "https://www.swiggy.com/collections/80476?collection_id=80476&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2",
+                      "text": "Paratha",
                       "type": "WEBLINK"
                     },
                     "entityType": "BANNER",
                     "accessibility": {
-                      "altText": "restaurant curated for thepla",
+                      "altText": "restaurants curated for paratha",
                       "altTextCta": "open"
                     },
-                    "entityId": "80409",
+                    "entityId": "80476",
+                    "frequencyCapping": {
+                      
+                    }
+                  },
+                  {
+                    "id": "750123",
+                    "imageId": "v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Dhokla.png",
+                    "action": {
+                      "link": "https://www.swiggy.com/collections/80423?collection_id=80423&tags=layout_BAU_Contextual%2Cdhokla&type=rcv2",
+                      "text": "Dhokla",
+                      "type": "WEBLINK"
+                    },
+                    "entityType": "BANNER",
+                    "accessibility": {
+                      "altText": "restaurants curated for dhokla",
+                      "altTextCta": "open"
+                    },
+                    "entityId": "80423",
+                    "frequencyCapping": {
+                      
+                    }
+                  },
+                  {
+                    "id": "750235",
+                    "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Sandwich.png",
+                    "action": {
+                      "link": "https://www.swiggy.com/collections/83667?collection_id=83667&tags=layout_CCS_Sandwiches&type=rcv2",
+                      "text": "Sandwich",
+                      "type": "WEBLINK"
+                    },
+                    "entityType": "BANNER",
+                    "accessibility": {
+                      "altText": "restaurants curated for sandwich",
+                      "altTextCta": "open"
+                    },
+                    "entityId": "swiggy://collectionV2?collection_id=83667&tags=layout_CCS_Sandwiches",
                     "frequencyCapping": {
                       
                     }
@@ -872,6 +852,42 @@
                       "altTextCta": "open"
                     },
                     "entityId": "swiggy://collectionV2?collection_id=80426&tags=layout_CCS_Dosa",
+                    "frequencyCapping": {
+                      
+                    }
+                  },
+                  {
+                    "id": "750258",
+                    "imageId": "v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Thepla.png",
+                    "action": {
+                      "link": "https://www.swiggy.com/collections/80409?collection_id=80409&tags=layout_BAU_Contextual%2Cthepla&type=rcv2",
+                      "text": "Thepla",
+                      "type": "WEBLINK"
+                    },
+                    "entityType": "BANNER",
+                    "accessibility": {
+                      "altText": "restaurant curated for thepla",
+                      "altTextCta": "open"
+                    },
+                    "entityId": "80409",
+                    "frequencyCapping": {
+                      
+                    }
+                  },
+                  {
+                    "id": "749761",
+                    "imageId": "v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Khichdi.png",
+                    "action": {
+                      "link": "https://www.swiggy.com/collections/80456?collection_id=80456&tags=layout_BAU_Contextual%2Ckhichdi&type=rcv2",
+                      "text": "Khichdi",
+                      "type": "WEBLINK"
+                    },
+                    "entityType": "BANNER",
+                    "accessibility": {
+                      "altText": "restaurants curated for khicdhi",
+                      "altTextCta": "open"
+                    },
+                    "entityId": "80456",
                     "frequencyCapping": {
                       
                     }
@@ -949,24 +965,6 @@
                     }
                   },
                   {
-                    "id": "749791",
-                    "imageId": "v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Pakodas.png",
-                    "action": {
-                      "link": "https://www.swiggy.com/collections/80470?collection_id=80470&tags=layout_BAU_Contextual%2Cpakoda&type=rcv2",
-                      "text": "Pakoda",
-                      "type": "WEBLINK"
-                    },
-                    "entityType": "BANNER",
-                    "accessibility": {
-                      "altText": "restaurant curated for pakoda",
-                      "altTextCta": "open"
-                    },
-                    "entityId": "80470",
-                    "frequencyCapping": {
-                      
-                    }
-                  },
-                  {
                     "id": "750239",
                     "imageId": "v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Shakes.png",
                     "action": {
@@ -1003,37 +1001,19 @@
                     }
                   },
                   {
-                    "id": "749761",
-                    "imageId": "v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Khichdi.png",
+                    "id": "749791",
+                    "imageId": "v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Pakodas.png",
                     "action": {
-                      "link": "https://www.swiggy.com/collections/80456?collection_id=80456&tags=layout_BAU_Contextual%2Ckhichdi&type=rcv2",
-                      "text": "Khichdi",
+                      "link": "https://www.swiggy.com/collections/80470?collection_id=80470&tags=layout_BAU_Contextual%2Cpakoda&type=rcv2",
+                      "text": "Pakoda",
                       "type": "WEBLINK"
                     },
                     "entityType": "BANNER",
                     "accessibility": {
-                      "altText": "restaurants curated for khicdhi",
+                      "altText": "restaurant curated for pakoda",
                       "altTextCta": "open"
                     },
-                    "entityId": "80456",
-                    "frequencyCapping": {
-                      
-                    }
-                  },
-                  {
-                    "id": "750572",
-                    "imageId": "v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Pure_Veg.png",
-                    "action": {
-                      "link": "https://www.swiggy.com/collections/80439?collection_id=80439&tags=layout_CCS_PureVeg&type=rcv2",
-                      "text": "Pure Veg",
-                      "type": "WEBLINK"
-                    },
-                    "entityType": "BANNER",
-                    "accessibility": {
-                      "altText": "restaurants curated for veg",
-                      "altTextCta": "open"
-                    },
-                    "entityId": "swiggy://collectionV2?collection_id=80439&tags=layout_CCS_PureVeg",
+                    "entityId": "80470",
                     "frequencyCapping": {
                       
                     }
@@ -1052,6 +1032,24 @@
                       "altTextCta": "open"
                     },
                     "entityId": "80427",
+                    "frequencyCapping": {
+                      
+                    }
+                  },
+                  {
+                    "id": "750572",
+                    "imageId": "v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Pure_Veg.png",
+                    "action": {
+                      "link": "https://www.swiggy.com/collections/80439?collection_id=80439&tags=layout_CCS_PureVeg&type=rcv2",
+                      "text": "Pure Veg",
+                      "type": "WEBLINK"
+                    },
+                    "entityType": "BANNER",
+                    "accessibility": {
+                      "altText": "restaurants curated for veg",
+                      "altTextCta": "open"
+                    },
+                    "entityId": "swiggy://collectionV2?collection_id=80439&tags=layout_CCS_PureVeg",
                     "frequencyCapping": {
                       
                     }
@@ -1207,15 +1205,15 @@
                       "avgRatingString": "4.2",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 27,
                         "lastMileTravel": 7,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "27 mins",
                         "lastMileTravelString": "7.0 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -1276,6 +1274,105 @@
                   },
                   {
                     "info": {
+                      "id": "573379",
+                      "name": "Burger King",
+                      "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+                      "locality": "Iscon Jan Mahal ",
+                      "areaName": "Sayajigunj",
+                      "costForTwo": "₹350 for two",
+                      "cuisines": [
+                        "Burgers",
+                        "American"
+                      ],
+                      "avgRating": 4,
+                      "feeDetails": {
+                        "restaurantId": "573379",
+                        "fees": [
+                          {
+                            "name": "BASE_DISTANCE",
+                            "fee": 3300
+                          },
+                          {
+                            "name": "BASE_TIME"
+                          },
+                          {
+                            "name": "ANCILLARY_SURGE_FEE"
+                          }
+                        ],
+                        "totalFee": 3300
+                      },
+                      "parentId": "166",
+                      "avgRatingString": "4.0",
+                      "totalRatingsString": "1K+",
+                      "sla": {
+                        "deliveryTime": 25,
+                        "lastMileTravel": 4.7,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "25 mins",
+                        "lastMileTravelString": "4.7 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2023-10-09 03:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "60% OFF",
+                        "subHeader": "UPTO ₹120"
+                      },
+                      "loyaltyDiscoverPresentationInfo": {
+                        "badgeType": "BADGE_TYPE_OFFER_PACK",
+                        "offerSubText": "with offer pack",
+                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/restaurants/burger-king-iscon-jan-mahal-sayajigunj-vadodara-573379",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
                       "id": "77084",
                       "name": "Subway",
                       "cloudinaryImageId": "1ace5fa65eff3e1223feb696c956b38b",
@@ -1310,15 +1407,15 @@
                       "avgRatingString": "4.0",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 26,
+                        "deliveryTime": 27,
                         "lastMileTravel": 4.2,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "26 mins",
+                        "slaString": "27 mins",
                         "lastMileTravelString": "4.2 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-08 01:30:00",
+                        "nextCloseTime": "2023-10-09 01:30:00",
                         "opened": true
                       },
                       "badges": {
@@ -1374,105 +1471,6 @@
                   },
                   {
                     "info": {
-                      "id": "573379",
-                      "name": "Burger King",
-                      "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-                      "locality": "Iscon Jan Mahal ",
-                      "areaName": "Sayajigunj",
-                      "costForTwo": "₹350 for two",
-                      "cuisines": [
-                        "Burgers",
-                        "American"
-                      ],
-                      "avgRating": 4,
-                      "feeDetails": {
-                        "restaurantId": "573379",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 3300
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 3300
-                      },
-                      "parentId": "166",
-                      "avgRatingString": "4.0",
-                      "totalRatingsString": "1K+",
-                      "sla": {
-                        "deliveryTime": 28,
-                        "lastMileTravel": 4.7,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
-                        "lastMileTravelString": "4.7 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-10-08 03:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "EVERY ITEM",
-                        "subHeader": "@ ₹129"
-                      },
-                      "loyaltyDiscoverPresentationInfo": {
-                        "badgeType": "BADGE_TYPE_OFFER_PACK",
-                        "offerSubText": "with offer pack",
-                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-                        
-                      }
-                    },
-                    "analytics": {
-                      
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/burger-king-iscon-jan-mahal-sayajigunj-vadodara-573379",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
                       "id": "291999",
                       "name": "Hotel Sudha",
                       "cloudinaryImageId": "nig9hnmz4pmcbviyehk2",
@@ -1484,7 +1482,7 @@
                         "Fast Food",
                         "Beverages"
                       ],
-                      "avgRating": 4.4,
+                      "avgRating": 4.5,
                       "veg": true,
                       "feeDetails": {
                         "restaurantId": "291999",
@@ -1503,18 +1501,18 @@
                         "totalFee": 4800
                       },
                       "parentId": "102747",
-                      "avgRatingString": "4.4",
+                      "avgRatingString": "4.5",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 26,
                         "lastMileTravel": 7.7,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "26 mins",
                         "lastMileTravelString": "7.7 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 14:45:00",
+                        "nextCloseTime": "2023-10-08 14:45:00",
                         "opened": true
                       },
                       "badges": {
@@ -1582,108 +1580,6 @@
                   },
                   {
                     "info": {
-                      "id": "243134",
-                      "name": "Sweet Truth - Cake and Desserts",
-                      "cloudinaryImageId": "4a3b48488e3aa9bda13efd8cfcd95284",
-                      "locality": "ONGC Road",
-                      "areaName": "Manjalpur",
-                      "costForTwo": "₹450 for two",
-                      "cuisines": [
-                        "Snacks",
-                        "Bakery",
-                        "Desserts",
-                        "Beverages"
-                      ],
-                      "avgRating": 4.3,
-                      "feeDetails": {
-                        "restaurantId": "243134",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 1800
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 1800
-                      },
-                      "parentId": "4444",
-                      "avgRatingString": "4.3",
-                      "totalRatingsString": "100+",
-                      "sla": {
-                        "deliveryTime": 28,
-                        "lastMileTravel": 2.5,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
-                        "lastMileTravelString": "2.5 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹249",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "loyaltyDiscoverPresentationInfo": {
-                        "badgeType": "BADGE_TYPE_OFFER_PACK",
-                        "offerSubText": "with offer pack",
-                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-                        
-                      }
-                    },
-                    "analytics": {
-                      
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-ongc-road-manjalpur-vadodara-243134",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
                       "id": "378605",
                       "name": "Baskin Robbins - Ice Cream Desserts",
                       "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
@@ -1694,7 +1590,7 @@
                         "Desserts",
                         "Ice Cream"
                       ],
-                      "avgRating": 3.5,
+                      "avgRating": 3.6,
                       "veg": true,
                       "feeDetails": {
                         "restaurantId": "378605",
@@ -1713,18 +1609,18 @@
                         "totalFee": 1800
                       },
                       "parentId": "5588",
-                      "avgRatingString": "3.5",
+                      "avgRatingString": "3.6",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 30,
+                        "deliveryTime": 25,
                         "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "30 mins",
+                        "slaString": "25 mins",
                         "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -1797,26 +1693,25 @@
                   },
                   {
                     "info": {
-                      "id": "542228",
-                      "name": "Keventers - Milkshakes & Desserts",
-                      "cloudinaryImageId": "f0e94c984813053f46c214f18ce73d59",
-                      "locality": "Ashapura Arcade",
-                      "areaName": "Nizampura",
-                      "costForTwo": "₹200 for two",
+                      "id": "243134",
+                      "name": "Sweet Truth - Cake and Desserts",
+                      "cloudinaryImageId": "4a3b48488e3aa9bda13efd8cfcd95284",
+                      "locality": "ONGC Road",
+                      "areaName": "Manjalpur",
+                      "costForTwo": "₹450 for two",
                       "cuisines": [
-                        "Beverages",
-                        "Ice Cream",
+                        "Snacks",
+                        "Bakery",
                         "Desserts",
-                        "Healthy Food"
+                        "Beverages"
                       ],
-                      "avgRating": 4.5,
-                      "veg": true,
+                      "avgRating": 4.3,
                       "feeDetails": {
-                        "restaurantId": "542228",
+                        "restaurantId": "243134",
                         "fees": [
                           {
                             "name": "BASE_DISTANCE",
-                            "fee": 4300
+                            "fee": 1800
                           },
                           {
                             "name": "BASE_TIME"
@@ -1825,44 +1720,32 @@
                             "name": "ANCILLARY_SURGE_FEE"
                           }
                         ],
-                        "totalFee": 4300
+                        "totalFee": 1800
                       },
-                      "parentId": "268997",
-                      "avgRatingString": "4.5",
+                      "parentId": "4444",
+                      "avgRatingString": "4.3",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 27,
-                        "lastMileTravel": 6.3,
+                        "deliveryTime": 23,
+                        "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "27 mins",
-                        "lastMileTravelString": "6.3 km",
+                        "slaString": "23 mins",
+                        "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-08 00:30:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "v1695133679/badges/Pure_Veg111.png",
-                            "description": "pureveg"
-                          }
-                        ]
+                        
                       },
                       "isOpen": true,
                       "type": "F",
                       "badgesV2": {
                         "entityBadges": {
                           "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "pureveg",
-                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                              }
-                            ]
+                            
                           },
                           "textBased": {
                             
@@ -1906,7 +1789,7 @@
                       
                     },
                     "cta": {
-                      "link": "https://www.swiggy.com/restaurants/keventers-milkshakes-and-desserts-ashapura-arcade-nizampura-vadodara-542228",
+                      "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-ongc-road-manjalpur-vadodara-243134",
                       "type": "WEBLINK"
                     }
                   },
@@ -1949,15 +1832,15 @@
                       "avgRatingString": "4.1",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 30,
+                        "deliveryTime": 32,
                         "lastMileTravel": 5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "30 mins",
+                        "slaString": "32 mins",
                         "lastMileTravelString": "5.0 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:00:00",
+                        "nextCloseTime": "2023-10-08 23:00:00",
                         "opened": true
                       },
                       "badges": {
@@ -2018,118 +1901,6 @@
                   },
                   {
                     "info": {
-                      "id": "92545",
-                      "name": "Jagdish Foods Pvt Ltd",
-                      "cloudinaryImageId": "gjslzcl4yaedbbdoljgd",
-                      "locality": "Old Padra Road",
-                      "areaName": "Karelibaug",
-                      "costForTwo": "₹300 for two",
-                      "cuisines": [
-                        "Desserts"
-                      ],
-                      "avgRating": 4.5,
-                      "veg": true,
-                      "feeDetails": {
-                        "restaurantId": "92545",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 1800
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 1800
-                      },
-                      "parentId": "22014",
-                      "avgRatingString": "4.5",
-                      "totalRatingsString": "1K+",
-                      "sla": {
-                        "deliveryTime": 31,
-                        "lastMileTravel": 3.5,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "31 mins",
-                        "lastMileTravelString": "3.5 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-10-07 20:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "v1695133679/badges/Pure_Veg111.png",
-                            "description": "pureveg"
-                          }
-                        ]
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "pureveg",
-                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                              }
-                            ]
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹249",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "loyaltyDiscoverPresentationInfo": {
-                        "badgeType": "BADGE_TYPE_OFFER_PACK",
-                        "offerSubText": "with offer pack",
-                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-                        
-                      }
-                    },
-                    "analytics": {
-                      
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/jagdish-foods-pvt-ltd-old-padra-road-karelibaug-vadodara-92545",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
                       "id": "80220",
                       "name": "Jagdish Farshan Pvt Ltd",
                       "cloudinaryImageId": "aeqjhjlhtwekpzh6himl",
@@ -2163,15 +1934,15 @@
                       "avgRatingString": "4.5",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 17,
+                        "deliveryTime": 19,
                         "lastMileTravel": 1.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "17 mins",
+                        "slaString": "19 mins",
                         "lastMileTravelString": "1.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 21:30:00",
+                        "nextCloseTime": "2023-10-08 21:30:00",
                         "opened": true
                       },
                       "badges": {
@@ -2244,6 +2015,118 @@
                   },
                   {
                     "info": {
+                      "id": "92545",
+                      "name": "Jagdish Foods Pvt Ltd",
+                      "cloudinaryImageId": "gjslzcl4yaedbbdoljgd",
+                      "locality": "Old Padra Road",
+                      "areaName": "Karelibaug",
+                      "costForTwo": "₹300 for two",
+                      "cuisines": [
+                        "Desserts"
+                      ],
+                      "avgRating": 4.5,
+                      "veg": true,
+                      "feeDetails": {
+                        "restaurantId": "92545",
+                        "fees": [
+                          {
+                            "name": "BASE_DISTANCE",
+                            "fee": 1800
+                          },
+                          {
+                            "name": "BASE_TIME"
+                          },
+                          {
+                            "name": "ANCILLARY_SURGE_FEE"
+                          }
+                        ],
+                        "totalFee": 1800
+                      },
+                      "parentId": "22014",
+                      "avgRatingString": "4.5",
+                      "totalRatingsString": "1K+",
+                      "sla": {
+                        "deliveryTime": 32,
+                        "lastMileTravel": 3.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "32 mins",
+                        "lastMileTravelString": "3.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2023-10-08 20:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹249",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "loyaltyDiscoverPresentationInfo": {
+                        "badgeType": "BADGE_TYPE_OFFER_PACK",
+                        "offerSubText": "with offer pack",
+                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/restaurants/jagdish-foods-pvt-ltd-old-padra-road-karelibaug-vadodara-92545",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
                       "id": "107110",
                       "name": "Shree Kheteshwar Sweets",
                       "cloudinaryImageId": "edsilkslzfn79yq5tjtv",
@@ -2278,15 +2161,15 @@
                       "avgRatingString": "4.1",
                       "totalRatingsString": "10K+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 27,
                         "lastMileTravel": 8.4,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "27 mins",
                         "lastMileTravelString": "8.4 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 21:15:00",
+                        "nextCloseTime": "2023-10-08 21:15:00",
                         "opened": true
                       },
                       "badges": {
@@ -2359,112 +2242,6 @@
                   },
                   {
                     "info": {
-                      "id": "243130",
-                      "name": "Faasos - Wraps & Rolls",
-                      "cloudinaryImageId": "af33b81798b11deba338e94b7585d348",
-                      "locality": "ONGC Road",
-                      "areaName": "Manjalpur",
-                      "costForTwo": "₹200 for two",
-                      "cuisines": [
-                        "Kebabs",
-                        "Fast Food",
-                        "Snacks",
-                        "North Indian",
-                        "American",
-                        "Healthy Food",
-                        "Desserts",
-                        "Beverages"
-                      ],
-                      "avgRating": 4.2,
-                      "feeDetails": {
-                        "restaurantId": "243130",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 1800
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 1800
-                      },
-                      "parentId": "21809",
-                      "avgRatingString": "4.2",
-                      "totalRatingsString": "1K+",
-                      "sla": {
-                        "deliveryTime": 26,
-                        "lastMileTravel": 2.5,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "26 mins",
-                        "lastMileTravelString": "2.5 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹249",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "loyaltyDiscoverPresentationInfo": {
-                        "badgeType": "BADGE_TYPE_OFFER_PACK",
-                        "offerSubText": "with offer pack",
-                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-                        
-                      }
-                    },
-                    "analytics": {
-                      
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/faasos-wraps-and-rolls-ongc-road-manjalpur-vadodara-243130",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
                       "id": "243137",
                       "name": "LunchBox - Meals and Thalis",
                       "cloudinaryImageId": "njsbgbcrvsdmtstzl6e4",
@@ -2500,15 +2277,15 @@
                       "avgRatingString": "4.0",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 29,
+                        "deliveryTime": 26,
                         "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "29 mins",
+                        "slaString": "26 mins",
                         "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -2569,6 +2346,112 @@
                   },
                   {
                     "info": {
+                      "id": "243130",
+                      "name": "Faasos - Wraps & Rolls",
+                      "cloudinaryImageId": "af33b81798b11deba338e94b7585d348",
+                      "locality": "ONGC Road",
+                      "areaName": "Manjalpur",
+                      "costForTwo": "₹200 for two",
+                      "cuisines": [
+                        "Kebabs",
+                        "Fast Food",
+                        "Snacks",
+                        "North Indian",
+                        "American",
+                        "Healthy Food",
+                        "Desserts",
+                        "Beverages"
+                      ],
+                      "avgRating": 4.2,
+                      "feeDetails": {
+                        "restaurantId": "243130",
+                        "fees": [
+                          {
+                            "name": "BASE_DISTANCE",
+                            "fee": 1800
+                          },
+                          {
+                            "name": "BASE_TIME"
+                          },
+                          {
+                            "name": "ANCILLARY_SURGE_FEE"
+                          }
+                        ],
+                        "totalFee": 1800
+                      },
+                      "parentId": "21809",
+                      "avgRatingString": "4.2",
+                      "totalRatingsString": "1K+",
+                      "sla": {
+                        "deliveryTime": 25,
+                        "lastMileTravel": 2.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "25 mins",
+                        "lastMileTravelString": "2.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2023-10-08 23:59:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹249",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "loyaltyDiscoverPresentationInfo": {
+                        "badgeType": "BADGE_TYPE_OFFER_PACK",
+                        "offerSubText": "with offer pack",
+                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/restaurants/faasos-wraps-and-rolls-ongc-road-manjalpur-vadodara-243130",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
                       "id": "93525",
                       "name": "Gwalia Sweets & Fast Food",
                       "cloudinaryImageId": "eham0vsdzqvkidat3x05",
@@ -2608,7 +2491,7 @@
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 22:30:00",
+                        "nextCloseTime": "2023-10-08 22:30:00",
                         "opened": true
                       },
                       "badges": {
@@ -2681,22 +2564,26 @@
                   },
                   {
                     "info": {
-                      "id": "452635",
-                      "name": "Pizza Hut",
-                      "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
-                      "locality": "Shrinathji Society",
-                      "areaName": "Madhavpura",
-                      "costForTwo": "₹350 for two",
+                      "id": "79945",
+                      "name": "Hotel Durga",
+                      "cloudinaryImageId": "wbzqsnlths53w4g8gapd",
+                      "locality": "Makarpura Road",
+                      "areaName": "Makarpura",
+                      "costForTwo": "₹250 for two",
                       "cuisines": [
-                        "Pizzas"
+                        "Chinese",
+                        "North Indian",
+                        "South Indian",
+                        "Biryani"
                       ],
-                      "avgRating": 3.7,
+                      "avgRating": 4.1,
+                      "veg": true,
                       "feeDetails": {
-                        "restaurantId": "452635",
+                        "restaurantId": "79945",
                         "fees": [
                           {
                             "name": "BASE_DISTANCE",
-                            "fee": 1800
+                            "fee": 3800
                           },
                           {
                             "name": "BASE_TIME"
@@ -2705,44 +2592,32 @@
                             "name": "ANCILLARY_SURGE_FEE"
                           }
                         ],
-                        "totalFee": 1800
+                        "totalFee": 3800
                       },
-                      "parentId": "721",
-                      "avgRatingString": "3.7",
-                      "totalRatingsString": "1K+",
+                      "parentId": "98839",
+                      "avgRatingString": "4.1",
+                      "totalRatingsString": "5K+",
                       "sla": {
-                        "deliveryTime": 25,
-                        "lastMileTravel": 2,
+                        "deliveryTime": 30,
+                        "lastMileTravel": 5.8,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "25 mins",
-                        "lastMileTravelString": "2.0 km",
+                        "slaString": "30 mins",
+                        "lastMileTravelString": "5.8 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-08 01:00:00",
+                        "nextCloseTime": "2023-10-08 23:00:00",
                         "opened": true
                       },
                       "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "v1695133679/badges/Pure_Veg111.png",
-                            "description": "pureveg"
-                          }
-                        ]
+                        
                       },
                       "isOpen": true,
                       "type": "F",
                       "badgesV2": {
                         "entityBadges": {
                           "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "pureveg",
-                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                              }
-                            ]
+                            
                           },
                           "textBased": {
                             
@@ -2751,11 +2626,6 @@
                             
                           }
                         }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹249",
-                        "discountTag": "FLAT DEAL"
                       },
                       "loyaltyDiscoverPresentationInfo": {
                         "badgeType": "BADGE_TYPE_OFFER_PACK",
@@ -2786,7 +2656,7 @@
                       
                     },
                     "cta": {
-                      "link": "https://www.swiggy.com/restaurants/pizza-hut-shrinathji-society-madhavpura-vadodara-452635",
+                      "link": "https://www.swiggy.com/restaurants/hotel-durga-road-makarpura-vadodara-79945",
                       "type": "WEBLINK"
                     }
                   },
@@ -2824,15 +2694,15 @@
                       "avgRatingString": "4.6",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 23,
+                        "deliveryTime": 22,
                         "lastMileTravel": 6.3,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "23 mins",
+                        "slaString": "22 mins",
                         "lastMileTravelString": "6.3 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -2938,15 +2808,15 @@
                       "avgRatingString": "4.0",
                       "totalRatingsString": "50+",
                       "sla": {
-                        "deliveryTime": 30,
+                        "deliveryTime": 26,
                         "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "30 mins",
+                        "slaString": "26 mins",
                         "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -3053,15 +2923,15 @@
                       "avgRatingString": "4.6",
                       "totalRatingsString": "20+",
                       "sla": {
-                        "deliveryTime": 29,
+                        "deliveryTime": 25,
                         "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "29 mins",
+                        "slaString": "25 mins",
                         "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -3122,28 +2992,24 @@
                   },
                   {
                     "info": {
-                      "id": "79825",
-                      "name": "The Chocolate Room",
-                      "cloudinaryImageId": "fycjdldenml9ceyzcyid",
-                      "locality": "Patidar Road",
-                      "areaName": "Manjalpur",
-                      "costForTwo": "₹300 for two",
+                      "id": "482734",
+                      "name": "Canara Coffee House (Idli, Dosa & More)",
+                      "cloudinaryImageId": "zu0hbduzzrrwxzi6ocsm",
+                      "locality": "Chhatrapati Shivaji Marg",
+                      "areaName": "Mandvi",
+                      "costForTwo": "₹200 for two",
                       "cuisines": [
-                        "Desserts",
-                        "American",
-                        "Italian",
-                        "Pastas",
-                        "Ice Cream",
-                        "Pizzas"
+                        "South Indian",
+                        "Ice Cream"
                       ],
-                      "avgRating": 4.3,
+                      "avgRating": 3.8,
                       "veg": true,
                       "feeDetails": {
-                        "restaurantId": "79825",
+                        "restaurantId": "482734",
                         "fees": [
                           {
                             "name": "BASE_DISTANCE",
-                            "fee": 3300
+                            "fee": 1800
                           },
                           {
                             "name": "BASE_TIME"
@@ -3152,21 +3018,247 @@
                             "name": "ANCILLARY_SURGE_FEE"
                           }
                         ],
-                        "totalFee": 3300
+                        "totalFee": 1800
                       },
-                      "parentId": "1002",
-                      "avgRatingString": "4.3",
+                      "parentId": "290218",
+                      "avgRatingString": "3.8",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 34,
-                        "lastMileTravel": 4.8,
+                        "deliveryTime": 28,
+                        "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "34 mins",
-                        "lastMileTravelString": "4.8 km",
+                        "slaString": "28 mins",
+                        "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 22:45:00",
+                        "nextCloseTime": "2023-10-08 22:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹249",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "loyaltyDiscoverPresentationInfo": {
+                        "badgeType": "BADGE_TYPE_OFFER_PACK",
+                        "offerSubText": "with offer pack",
+                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/restaurants/canara-coffee-house-idli-dosa-and-more-chhatrapati-shivaji-marg-mandvi-vadodara-482734",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "81726",
+                      "name": "Satyavijay Farsan",
+                      "cloudinaryImageId": "pbpqo8icj2bf9emy2rwh",
+                      "locality": "Rajmahal Road",
+                      "areaName": "Mandvi",
+                      "costForTwo": "₹100 for two",
+                      "cuisines": [
+                        "Desserts"
+                      ],
+                      "avgRating": 3.9,
+                      "veg": true,
+                      "feeDetails": {
+                        "restaurantId": "81726",
+                        "fees": [
+                          {
+                            "name": "BASE_DISTANCE",
+                            "fee": 1800
+                          },
+                          {
+                            "name": "BASE_TIME"
+                          },
+                          {
+                            "name": "ANCILLARY_SURGE_FEE"
+                          }
+                        ],
+                        "totalFee": 1800
+                      },
+                      "parentId": "178994",
+                      "avgRatingString": "3.9",
+                      "totalRatingsString": "5K+",
+                      "sla": {
+                        "deliveryTime": 28,
+                        "lastMileTravel": 1.8,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "28 mins",
+                        "lastMileTravelString": "1.8 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2023-10-08 22:30:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹249",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "loyaltyDiscoverPresentationInfo": {
+                        "badgeType": "BADGE_TYPE_OFFER_PACK",
+                        "offerSubText": "with offer pack",
+                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/restaurants/satyavijay-farsan-rajmahal-road-mandvi-vadodara-81726",
+                      "type": "WEBLINK"
+                    }
+                  },
+                  {
+                    "info": {
+                      "id": "80202",
+                      "name": "Jay Mahakali Sev Usal (Kirti Stambhwala)",
+                      "cloudinaryImageId": "ivosfenqbi0ikfn7dvuw",
+                      "locality": "Rajmahal Road",
+                      "areaName": "Kirti Stambh",
+                      "costForTwo": "₹150 for two",
+                      "cuisines": [
+                        "Snacks",
+                        "Street Food",
+                        "Fast Food"
+                      ],
+                      "avgRating": 4.3,
+                      "veg": true,
+                      "feeDetails": {
+                        "restaurantId": "80202",
+                        "fees": [
+                          {
+                            "name": "BASE_DISTANCE",
+                            "fee": 1800
+                          },
+                          {
+                            "name": "BASE_TIME"
+                          },
+                          {
+                            "name": "ANCILLARY_SURGE_FEE"
+                          }
+                        ],
+                        "totalFee": 1800
+                      },
+                      "parentId": "110165",
+                      "avgRatingString": "4.3",
+                      "totalRatingsString": "5K+",
+                      "sla": {
+                        "deliveryTime": 24,
+                        "lastMileTravel": 2.2,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "24 mins",
+                        "lastMileTravelString": "2.2 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2023-10-08 20:30:00",
                         "opened": true
                       },
                       "badges": {
@@ -3228,108 +3320,7 @@
                       
                     },
                     "cta": {
-                      "link": "https://www.swiggy.com/restaurants/the-chocolate-room-patidar-road-manjalpur-vadodara-79825",
-                      "type": "WEBLINK"
-                    }
-                  },
-                  {
-                    "info": {
-                      "id": "301192",
-                      "name": "PVR Cafe",
-                      "cloudinaryImageId": "giuiwzhvjogg6ikd8zof",
-                      "locality": "Eva Mall",
-                      "areaName": "Manjalpur",
-                      "costForTwo": "₹300 for two",
-                      "cuisines": [
-                        "Snacks",
-                        "Fast Food",
-                        "Beverages"
-                      ],
-                      "avgRating": 3.8,
-                      "feeDetails": {
-                        "restaurantId": "301192",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 3300
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 3300
-                      },
-                      "parentId": "11664",
-                      "avgRatingString": "3.8",
-                      "totalRatingsString": "50+",
-                      "sla": {
-                        "deliveryTime": 28,
-                        "lastMileTravel": 4.8,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
-                        "lastMileTravelString": "4.8 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-10-08 01:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹249",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "loyaltyDiscoverPresentationInfo": {
-                        "badgeType": "BADGE_TYPE_OFFER_PACK",
-                        "offerSubText": "with offer pack",
-                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-                        
-                      }
-                    },
-                    "analytics": {
-                      
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/pvr-cafe-eva-mall-manjalpur-vadodara-301192",
+                      "link": "https://www.swiggy.com/restaurants/jay-mahakali-sev-usal-kirti-stambhwala-rajmahal-road-kirti-stambh-vadodara-80202",
                       "type": "WEBLINK"
                     }
                   }
@@ -4078,6 +4069,22 @@
                 "subLabel": "Filter by"
               },
               {
+                "label": "Offers",
+                "id": "restaurantOfferMultiTd",
+                "selection": "SELECT_TYPE_SINGLESELECT",
+                "facetInfo": [
+                  {
+                    "label": "Offers",
+                    "id": "restaurantOfferMultiTdfacetquery3",
+                    "analytics": {
+                      
+                    }
+                  }
+                ],
+                "viewType": "VIEW_TYPE_FLATTENED",
+                "subLabel": "Restaurants with"
+              },
+              {
                 "label": "Cost for two",
                 "id": "costForTwo",
                 "selection": "SELECT_TYPE_MULTISELECT",
@@ -4162,15 +4169,15 @@
                       "avgRatingString": "4.2",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 27,
                         "lastMileTravel": 7,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "27 mins",
                         "lastMileTravelString": "7.0 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -4236,7 +4243,7 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/starbucks-coffee-square-mall-subhanpura-vadodara-245003",
@@ -4281,15 +4288,15 @@
                       "avgRatingString": "4.0",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 26,
+                        "deliveryTime": 27,
                         "lastMileTravel": 4.2,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "26 mins",
+                        "slaString": "27 mins",
                         "lastMileTravelString": "4.2 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-08 01:30:00",
+                        "nextCloseTime": "2023-10-09 01:30:00",
                         "opened": true
                       },
                       "badges": {
@@ -4350,7 +4357,7 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/subway-muktanand-karelibaug-vadodara-77084",
@@ -4392,15 +4399,15 @@
                       "avgRatingString": "4.0",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 25,
                         "lastMileTravel": 4.7,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "25 mins",
                         "lastMileTravelString": "4.7 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-08 03:00:00",
+                        "nextCloseTime": "2023-10-09 03:00:00",
                         "opened": true
                       },
                       "badges": {
@@ -4422,8 +4429,8 @@
                         }
                       },
                       "aggregatedDiscountInfoV3": {
-                        "header": "EVERY ITEM",
-                        "subHeader": "@ ₹129"
+                        "header": "60% OFF",
+                        "subHeader": "UPTO ₹120"
                       },
                       "loyaltyDiscoverPresentationInfo": {
                         "badgeType": "BADGE_TYPE_OFFER_PACK",
@@ -4465,7 +4472,7 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/burger-king-iscon-jan-mahal-sayajigunj-vadodara-573379",
@@ -4487,7 +4494,7 @@
                         "Fast Food",
                         "Beverages"
                       ],
-                      "avgRating": 4.4,
+                      "avgRating": 4.5,
                       "veg": true,
                       "feeDetails": {
                         "restaurantId": "291999",
@@ -4506,18 +4513,18 @@
                         "totalFee": 4800
                       },
                       "parentId": "102747",
-                      "avgRatingString": "4.4",
+                      "avgRatingString": "4.5",
                       "totalRatingsString": "1K+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 26,
                         "lastMileTravel": 7.7,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "26 mins",
                         "lastMileTravelString": "7.7 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 14:45:00",
+                        "nextCloseTime": "2023-10-08 14:45:00",
                         "opened": true
                       },
                       "badges": {
@@ -4590,7 +4597,7 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/hotel-sudha-adalja-complex-subhanpura-vadodara-291999",
@@ -4634,15 +4641,15 @@
                       "avgRatingString": "4.4",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 15,
+                        "deliveryTime": 16,
                         "lastMileTravel": 0.9,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "15 mins",
+                        "slaString": "16 mins",
                         "lastMileTravelString": "0.9 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 14:15:00",
+                        "nextCloseTime": "2023-10-08 14:15:00",
                         "opened": true
                       },
                       "badges": {
@@ -4719,7 +4726,7 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-ayurvedic-cross-road-mandvi-vadodara-649872",
@@ -4740,7 +4747,7 @@
                         "Desserts",
                         "Ice Cream"
                       ],
-                      "avgRating": 3.5,
+                      "avgRating": 3.6,
                       "veg": true,
                       "feeDetails": {
                         "restaurantId": "378605",
@@ -4759,18 +4766,18 @@
                         "totalFee": 1800
                       },
                       "parentId": "5588",
-                      "avgRatingString": "3.5",
+                      "avgRatingString": "3.6",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 30,
+                        "deliveryTime": 25,
                         "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "30 mins",
+                        "slaString": "25 mins",
                         "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -4848,7 +4855,7 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/baskin-robbins-ice-cream-desserts-infinity-arcade-manjalpur-vadodara-378605",
@@ -4892,15 +4899,15 @@
                       "avgRatingString": "4.3",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 28,
+                        "deliveryTime": 23,
                         "lastMileTravel": 2.5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "28 mins",
+                        "slaString": "23 mins",
                         "lastMileTravelString": "2.5 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:59:00",
+                        "nextCloseTime": "2023-10-08 23:59:00",
                         "opened": true
                       },
                       "badges": {
@@ -4966,141 +4973,10 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-ongc-road-manjalpur-vadodara-243134",
-                      "text": "RESTAURANT_MENU",
-                      "type": "WEBLINK"
-                    },
-                    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-                  },
-                  {
-                    "info": {
-                      "id": "542228",
-                      "name": "Keventers - Milkshakes & Desserts",
-                      "cloudinaryImageId": "f0e94c984813053f46c214f18ce73d59",
-                      "locality": "Ashapura Arcade",
-                      "areaName": "Nizampura",
-                      "costForTwo": "₹200 for two",
-                      "cuisines": [
-                        "Beverages",
-                        "Ice Cream",
-                        "Desserts",
-                        "Healthy Food"
-                      ],
-                      "avgRating": 4.5,
-                      "veg": true,
-                      "feeDetails": {
-                        "restaurantId": "542228",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 4300
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 4300
-                      },
-                      "parentId": "268997",
-                      "avgRatingString": "4.5",
-                      "totalRatingsString": "100+",
-                      "sla": {
-                        "deliveryTime": 27,
-                        "lastMileTravel": 6.3,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "27 mins",
-                        "lastMileTravelString": "6.3 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-10-08 00:30:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        "imageBadges": [
-                          {
-                            "imageId": "v1695133679/badges/Pure_Veg111.png",
-                            "description": "pureveg"
-                          }
-                        ]
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            "badgeObject": [
-                              {
-                                "attributes": {
-                                  "description": "pureveg",
-                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                              }
-                            ]
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "₹100 OFF",
-                        "subHeader": "ABOVE ₹249",
-                        "discountTag": "FLAT DEAL"
-                      },
-                      "loyaltyDiscoverPresentationInfo": {
-                        "badgeType": "BADGE_TYPE_OFFER_PACK",
-                        "offerSubText": "with offer pack",
-                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
-                      },
-                      "orderabilityCommunication": {
-                        "title": {
-                          
-                        },
-                        "subTitle": {
-                          
-                        },
-                        "message": {
-                          
-                        },
-                        "customIcon": {
-                          
-                        }
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                      "restaurantOfferPresentationInfo": {
-                        
-                      }
-                    },
-                    "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/keventers-milkshakes-and-desserts-ashapura-arcade-nizampura-vadodara-542228",
                       "text": "RESTAURANT_MENU",
                       "type": "WEBLINK"
                     },
@@ -5145,15 +5021,15 @@
                       "avgRatingString": "4.1",
                       "totalRatingsString": "100+",
                       "sla": {
-                        "deliveryTime": 30,
+                        "deliveryTime": 32,
                         "lastMileTravel": 5,
                         "serviceability": "SERVICEABLE",
-                        "slaString": "30 mins",
+                        "slaString": "32 mins",
                         "lastMileTravelString": "5.0 km",
                         "iconType": "ICON_TYPE_EMPTY"
                       },
                       "availability": {
-                        "nextCloseTime": "2023-10-07 23:00:00",
+                        "nextCloseTime": "2023-10-08 23:00:00",
                         "opened": true
                       },
                       "badges": {
@@ -5219,10 +5095,138 @@
                       }
                     },
                     "analytics": {
-                      "context": "seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5"
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
                     },
                     "cta": {
                       "link": "https://www.swiggy.com/restaurants/cafe-coffee-day-main-road-fatehgunj-vadodara-336570",
+                      "text": "RESTAURANT_MENU",
+                      "type": "WEBLINK"
+                    },
+                    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+                  },
+                  {
+                    "info": {
+                      "id": "92545",
+                      "name": "Jagdish Foods Pvt Ltd",
+                      "cloudinaryImageId": "gjslzcl4yaedbbdoljgd",
+                      "locality": "Old Padra Road",
+                      "areaName": "Karelibaug",
+                      "costForTwo": "₹300 for two",
+                      "cuisines": [
+                        "Desserts"
+                      ],
+                      "avgRating": 4.5,
+                      "veg": true,
+                      "feeDetails": {
+                        "restaurantId": "92545",
+                        "fees": [
+                          {
+                            "name": "BASE_DISTANCE",
+                            "fee": 1800
+                          },
+                          {
+                            "name": "BASE_TIME"
+                          },
+                          {
+                            "name": "ANCILLARY_SURGE_FEE"
+                          }
+                        ],
+                        "totalFee": 1800
+                      },
+                      "parentId": "22014",
+                      "avgRatingString": "4.5",
+                      "totalRatingsString": "1K+",
+                      "sla": {
+                        "deliveryTime": 32,
+                        "lastMileTravel": 3.5,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "32 mins",
+                        "lastMileTravelString": "3.5 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                      },
+                      "availability": {
+                        "nextCloseTime": "2023-10-08 20:00:00",
+                        "opened": true
+                      },
+                      "badges": {
+                        "imageBadges": [
+                          {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        ]
+                      },
+                      "isOpen": true,
+                      "type": "F",
+                      "badgesV2": {
+                        "entityBadges": {
+                          "imageBased": {
+                            "badgeObject": [
+                              {
+                                "attributes": {
+                                  "description": "pureveg",
+                                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                }
+                              }
+                            ]
+                          },
+                          "textBased": {
+                            
+                          },
+                          "textExtendedBadges": {
+                            
+                          }
+                        }
+                      },
+                      "aggregatedDiscountInfoV3": {
+                        "header": "₹100 OFF",
+                        "subHeader": "ABOVE ₹249",
+                        "discountTag": "FLAT DEAL"
+                      },
+                      "loyaltyDiscoverPresentationInfo": {
+                        "badgeType": "BADGE_TYPE_OFFER_PACK",
+                        "offerSubText": "with offer pack",
+                        "nonSwiggyOneFreedelMessage": "FREE DELIVERY"
+                      },
+                      "orderabilityCommunication": {
+                        "title": {
+                          
+                        },
+                        "subTitle": {
+                          
+                        },
+                        "message": {
+                          
+                        },
+                        "customIcon": {
+                          
+                        }
+                      },
+                      "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                          "lottie": {
+                            
+                          },
+                          "video": {
+                            
+                          }
+                        }
+                      },
+                      "reviewsSummary": {
+                        
+                      },
+                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                      "restaurantOfferPresentationInfo": {
+                        
+                      }
+                    },
+                    "analytics": {
+                      "context": "seo-data-50855988-89b8-4dd3-8977-cac227dcc78c"
+                    },
+                    "cta": {
+                      "link": "https://www.swiggy.com/restaurants/jagdish-foods-pvt-ltd-old-padra-road-karelibaug-vadodara-92545",
                       "text": "RESTAURANT_MENU",
                       "type": "WEBLINK"
                     },
@@ -5244,6 +5248,7 @@
           }
         }
       },
+      
       {
         "card": {
           "card": {
@@ -7952,7 +7957,7 @@
             "lat": "22.296116",
             "lng": "73.216694",
             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
-            "gandalfRequest": "{\"sortAttribute\":\"relevance\",\"isFiltered\":false,\"queryId\":\"seo-data-9807f392-c91d-4572-b2bf-39bf86c6d0f5\",\"seoParams\":{\"apiName\":\"FoodHomePage\",\"brandId\":\"\",\"seoUrl\":\"www.swiggy.com\",\"pageType\":\"FOOD_HOME_PAGE\"}}",
+            "gandalfRequest": "{\"sortAttribute\":\"relevance\",\"isFiltered\":false,\"queryId\":\"seo-data-50855988-89b8-4dd3-8977-cac227dcc78c\",\"seoParams\":{\"apiName\":\"FoodHomePage\",\"brandId\":\"\",\"seoUrl\":\"www.swiggy.com\",\"pageType\":\"FOOD_HOME_PAGE\"}}",
             "id": "meta_data",
             "metaInfo": {
               "pageType": "FOOD_HOME_PAGE",
@@ -7973,7 +7978,7 @@
     "nextFetch": 1
   },
   "tid": "a84ec1f4-29f7-4c26-b137-1d858e83aa54",
-  "sid": "9qw9babd-1497-417e-830e-6c8555448493",
+  "sid": "9rlbf925-ec7a-434d-8147-68600fc21452",
   "deviceId": "3c792dd0-8c2b-a63d-9745-01966e622b02",
-  "csrfToken": "7wEYccJC7F0Q-sf7CuZEm7TVLhNLapChpSwkU-84"
+  "csrfToken": "tZGsb5S8CtsP-EOKfu8Zg3kl8rvu4HLFo29kLj2U"
 }]

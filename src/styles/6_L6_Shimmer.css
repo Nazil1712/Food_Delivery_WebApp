@@ -1,126 +1,161 @@
-.shimm-para{
-    width: 225px;
-    height: 20px;
-    background-color: #f0f0f0;
-    position: relative;
-    right: 762px;
-    top: 7px;
-    border-radius: 40px;
+.offer-shimmer-container {
+  width: 70vw;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  top: 5px;
+  height: 300px;
+  margin-top: 45px;
+}
+
+.offers-shimmer-scrollbox {
+  display: flex;
+  height: 400px;
+  position: relative;
+  /* background-color: red; */
+  top: 20px;
+  gap: 15px;
+  left: 15px;
+}
+
+.offer-shimmer-card {
+  width: 420px;
+  height: 230px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  
+}
+
+.imagelayout-shimmer-container {
+  width: 70vw;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  top: 5px;
+  height: 270px;
+  margin-top: 30px;
+}
+
+.shimm-para {
+  width: 225px;
+  height: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  right: 762px;
+  top: 7px;
+  border-radius: 40px;
 }
 
 .shimm-arrow {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #f0f0f0;
-    margin-bottom: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 15px;
 }
 
 .shimm-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #f0f0f0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
 }
 
-.shimm-container{
-    width: 70vw;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 40px;
+.shimm-container {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .shimm-heading {
-    width: 350px;
-    height: 20px;
-    background-color: #f0f0f0;
-    position: relative;
-    left: 222px;
-    border-radius: 40px;
+  width: 350px;
+  height: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  left: 222px;
+  border-radius: 40px;
 }
-.search{
-    display: flex;
-    align-items: center;
-    border: 1px solid #f0f0f0;
-    width: 220px;
-    margin-bottom: 15px;
-    height: 30px;
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f0f0f0;
+  width: 220px;
+  margin-bottom: 15px;
+  height: 30px;
 }
 
-.search input{
-    outline: none;
+.search input {
+  outline: none;
 }
 
 .shimm {
-    position: relative;
-    left: 222px;
-    /* width: 20px; */
-    display: flex;
-    gap: 40px;
-    width: 70vw;
+  position: relative;
+  left: 222px;
+  /* width: 20px; */
+  display: flex;
+  gap: 40px;
+  width: 70vw;
 }
 
-
 .shimm-btn {
-    /* width: 155px; */
-    height: 20px;
-    background-color: #f0f0f0;
-    position: relative;
-    margin-top: 30px;
-    left: 13px;
-    border-radius: 50px;
+  /* width: 155px; */
+  height: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  margin-top: 30px;
+  left: 13px;
+  border-radius: 50px;
 }
 
 .shimm-searchbar {
-    width: 240px;
+  width: 240px;
 }
 
 .shimm-btn1 {
-    width: 110px;
+  width: 110px;
 }
 
 .shimm-btn2 {
-    width: 150px;
+  width: 150px;
 }
 
-.shimm-card{
-    width: 250px;
-    padding: 12px;
+.shimm-card {
+  width: 250px;
+  padding: 12px;
 }
 
-.shimm-img{
-    width: 230px;
-    height: 230px;
-    border-radius: 10px;
-    border: #f0f0f0;
-    background-color: #f0f0f0;
+.shimm-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 10px;
+  border: #f0f0f0;
+  background-color: #f0f0f0;
 }
-
 
 .shimm-info1 {
-    width: 200px;
-    height: 10px;
-    border-radius: 10px;
-    margin-top: 8px;
-    background-color: #f0f0f0;
+  width: 200px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  background-color: #f0f0f0;
 }
 .shimm-info2 {
-    width: 150px;
-    height: 10px;
-    border-radius: 10px;
-    margin-top: 8px;
-    /* background-color: #f9f9f9; */
-    background-color: #f1f1f1;
+  width: 150px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  /* background-color: #f9f9f9; */
+  background-color: #f1f1f1;
 }
 .shimm-info3 {
-    width: 100px;
-    height: 10px;
-    border-radius: 10px;
-    margin-top: 8px;
-    background-color: #f9f9f9;
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  background-color: #f9f9f9;
 }
-
-
-

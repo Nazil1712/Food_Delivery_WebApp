@@ -46,8 +46,10 @@ const Body = () => {
   };
 
   const handleFastDelv = () => {
-    const fastRestaurant = resData.filter((v,i,arr)=>v.info.sla.deliveryTime<20)
-    setresStateData(fastRestaurant)
+    const fastRestaurant = resData.filter(
+      (v, i, arr) => v.info.sla.deliveryTime < 20
+    );
+    setresStateData(fastRestaurant);
   };
 
   return (

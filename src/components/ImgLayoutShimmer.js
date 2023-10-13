@@ -17,7 +17,7 @@ const ImgLayoutShimmer = () => {
   // ));
 
   return (
-    <div className="imagelayout-container">
+    <div className="imagelayout-shimmer-container">
       <div className="arrow-container">
         <div className="shimm-para"></div>
         <div className="shimm-arrow"></div>

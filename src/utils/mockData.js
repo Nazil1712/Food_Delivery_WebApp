@@ -1756,4 +1756,99 @@ const resData = [
   }
 ];
 
-module.exports = { resData, imgLayout };
+const offers = [
+  {
+    "id": "1138899",
+    "imageId": "rng/md/carousel/production/23d24fb5e3c48229c1ad982e43283ef0",
+    "action": {
+      "link": "https://www.swiggy.com/collections/89290?collection_id=89290&tags=layout_ux4&type=rcv2",
+      "text": "Holi",
+      "type": "WEBLINK"
+    },
+    "entityType": "BANNER",
+    "accessibility": {
+      "altText": "Get 60% off to welcome you back",
+      "altTextCta": "Order Now"
+    },
+    "entityId": "89290",
+    "frequencyCapping": {
+      
+    }
+  },
+  {
+    "id": "1309014",
+    "imageId": "rng/md/carousel/production/7ee05033865cfdd68646fb3e22e20685",
+    "action": {
+      "link": "http://swiggy.com/menu?restaurant_id=111733&uuid=95da0295-f7ae-4ce2-ab88-08e7796ac0c9",
+      "text": "Brand Card",
+      "type": "WEBLINK"
+    },
+    "entityType": "BANNER",
+    "accessibility": {
+      "altText": "Brands with Offers",
+      "altTextCta": "open"
+    },
+    "entityId": "111733",
+    "frequencyCapping": {
+      
+    },
+    "isManualAds": true
+  },
+  {
+    "id": "1102497",
+    "imageId": "rng/md/carousel/production/973d13462aab086e7db8f35595751839",
+    "action": {
+      "link": "https://www.swiggy.com/collections/89823?collection_id=89823&tags=layout_ux4&type=rcv2",
+      "text": "Restaurants in Focus",
+      "type": "WEBLINK"
+    },
+    "entityType": "BANNER",
+    "accessibility": {
+      "altText": "Restaurants in Focus",
+      "altTextCta": "Order Now"
+    },
+    "entityId": "89823",
+    "frequencyCapping": {
+      
+    }
+  },
+  {
+    "id": "1308794",
+    "imageId": "rng/md/carousel/production/aa0f1b9a69fe771c137d7269155f45a4",
+    "action": {
+      "link": "https://www.swiggy.com/menu/573379",
+      "text": "Burger King",
+      "type": "WEBLINK"
+    },
+    "entityType": "BANNER",
+    "accessibility": {
+      "altText": "Burger King",
+      "altTextCta": "Order Now"
+    },
+    "entityId": "573379",
+    "frequencyCapping": {
+      
+    },
+    "isManualAds": true
+  },
+  {
+    "id": "1102493",
+    "imageId": "rng/md/carousel/production/3631d2b30f07621486a678478998929f",
+    "action": {
+      "link": "https://www.swiggy.com/collections/89819?collection_id=89819&tags=layout_ux4&type=rcv2",
+      "text": "Holi",
+      "type": "WEBLINK"
+    },
+    "entityType": "BANNER",
+    "accessibility": {
+      "altText": "TOP BRANDS TOP OFFERS",
+      "altTextCta": "ORDER NOW"
+    },
+    "entityId": "89819",
+    "frequencyCapping": {
+      
+    }
+  }
+]
+
+module.exports = { resData, imgLayout, offers };

@@ -1,37 +1,88 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+// Normal
 import Header from "./components/Header";
 import ImgLayout from "./components/ImgLayout";
 import Body from "./components/Body";
-import ImgLayoutShimmer from "./components/ImgLayoutShimmer";
-import BodyShimmer from "./components/BodyShimmer";
-import Body2 from "./components/Body2";
-import ImgLayout2 from "./components/ImgLayout2";
-import Body2ShimmExp from "./components/Body2ShimmExp";
-import ImgLayout2ShimmExp from "./components/ImgLayout2ShimmExp";
-import ImgLayoutShimm2 from "./components/ImgLayoutShimm2";
+import ErrorElement from "./components/ErrorElement";
+
+// Shimmers
 import BodyShimm2 from "./components/BodyShimm2";
+import Help from "./components/Help";
+import Cart from "./components/Cart";
+import Search from "./components/Search";
+import ImgLayoutShimm3 from "./components/ImgLayoutShimm3";
+import OffersShimm3 from "./components/OfffersShimm3";
+import OfferRoute from "./components/offerRoute";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
 
-      <ImgLayoutShimm2/>
-      {/* <ImgLayoutShimmer/> */}
-      <BodyShimm2/>
-      {/* <BodyShimmer/> */}
+      {/* <OffersShimm3/>
+      <ImgLayoutShimm3/>
+      <BodyShimm2/> */}
 
-
-
-      {/* <ImgLayout/>
-      <Body/> */}
-
+      <Outlet />
     </div>
   );
 };
 
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <>
+            <OffersShimm3 />
+            <ImgLayoutShimm3 />
+            <BodyShimm2 />
+          </>
+        ),
+      },
+      {
+        path: "/home",
+        element: (
+          <>
+            <OffersShimm3 />
+            <ImgLayoutShimm3 />
+            <BodyShimm2 />
+          </>
+        ),
+      },
+      {
+        path: "/offer",
+        element: <OfferRoute />,
+      },
+      {
+        path: "/help",
+        element: <Help />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/search",
+        element: <Search />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
+    ],
+    errorElement: <ErrorElement />,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<AppLayout />);
+// root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter} />);

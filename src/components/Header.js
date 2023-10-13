@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { useEffect } from "react";
 import {
   faMagnifyingGlass,
   faPercent,
@@ -10,58 +10,59 @@ import {
 
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
   const [btnName, setBtnName] = useState("Sign In");
 
-  const handleClick = () =>{
-    if(btnName == "Sign In"){
-      setBtnName("Sign Out")
+  // console.log("Header Render");
+  useEffect(() => {
+    // console.log("useEffect called");
+  }, [btnName]);
+
+  const handleClick = () => {
+    if (btnName == "Sign In") {
+      setBtnName("Sign Out");
+    } else {
+      setBtnName("Sign In");
     }
-    else{
-      setBtnName("Sign In")
-    }
-  }
+  };
 
   return (
     <div className="header">
       <div className="header-container">
         <div className="logo-container">
-          <img
-            className="logo"
-            src={LOGO_URL}
-          />
+          <img className="logo" src={LOGO_URL} />
         </div>
         <div className="nav-items">
           <ul>
             <li>
-              <a href="#">
+              <Link to="/Search">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
                 Search
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/Offer">
                 <FontAwesomeIcon icon={faPercent} />
                 Offers
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/Help">
                 <FontAwesomeIcon icon={faHandshakeAngle} />
                 Help
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>
+              <Link to="#" onClick={handleClick}>
                 <FontAwesomeIcon icon={faSignIn} /> {btnName}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/Cart">
                 <FontAwesomeIcon icon={faCartShopping} /> Cart
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
