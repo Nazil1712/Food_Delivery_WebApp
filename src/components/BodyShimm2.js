@@ -4,6 +4,7 @@ import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import { resData } from "../utils/mockData";
 import { RES_IMG_URL } from "../utils/constants";
 import BodyShimmer from "./BodyShimmer";
+import { Link } from "react-router-dom";
 
 const RestauratCard = ({
   foodImg,
@@ -36,20 +37,26 @@ const BodyShimm2 = () => {
 
   const [searchText, setSearchText] = useState("");
 
-  const fetchData = async() =>{
+  const fetchData = async () => {
     // const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
 
-    const json = await data.json()
+    const json = await data.json();
 
     // console.log(json.data.cards[5].card.card.gridElements.infoWithStyle.restaurants)
-    setresStateData(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    setMyfilteredRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-  }
+    setresStateData(
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    setMyfilteredRestaurant(
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+  };
 
-  useEffect(()=>{
-    fetchData()
-  }, [])
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const handleRate = () => {
     const topRated = resStateData.filter((v, i) => v.info.avgRating > 4.0);
@@ -64,11 +71,15 @@ const BodyShimm2 = () => {
   };
 
   const handleFastDelv = () => {
-    const fastRestaurant = resStateData.filter((v,i,arr)=>v.info.sla.deliveryTime<25)
-    setMyfilteredRestaurant(fastRestaurant)
+    const fastRestaurant = resStateData.filter(
+      (v, i, arr) => v.info.sla.deliveryTime < 25
+    );
+    setMyfilteredRestaurant(fastRestaurant);
   };
 
-  return resStateData.length==0 ? <BodyShimmer/>:(
+  return resStateData.length == 0 ? (
+    <BodyShimmer />
+  ) : (
     <div className="body">
       <div className="body-heading">
         <p>Restaurants with online food delivery</p>
@@ -97,14 +108,16 @@ const BodyShimm2 = () => {
       </div>
       <div className="res-container">
         {myfilteredRestaurant.map((v, i, arr) => (
-          <RestauratCard
-            foodImg={RES_IMG_URL + v.info.cloudinaryImageId}
-            resName={v.info.name}
-            cuisines={v.info.cuisines.join(", ")}
-            resRatings={v.info.avgRating}
-            delvTime={v.info.sla.deliveryTime}
-            key={v.info.id}
-          />
+          <Link to={"/restaurants/" + v.info.id} key={v.info.id} className=".link-tag">
+            <RestauratCard
+              foodImg={RES_IMG_URL + v.info.cloudinaryImageId}
+              resName={v.info.name}
+              cuisines={v.info.cuisines.join(", ")}
+              resRatings={v.info.avgRating}
+              delvTime={v.info.sla.deliveryTime}
+              v={v}
+            />
+          </Link>
         ))}
       </div>
     </div>

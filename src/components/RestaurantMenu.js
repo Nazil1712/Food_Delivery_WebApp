@@ -9,16 +9,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ResMenuItems from "./ResMenuItems";
 import { useParams } from "react-router-dom";
+import { RES_MENU_ITEMS_URL } from "../utils/constants";
+import NonVeg from "./NonVeg";
+import Veg from "./Veg";
 
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
   const params = useParams();
+  const { resId } = params;
 
   const fetchMenu = async () => {
-    const data = await fetch(
-      // "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.296116&lng=73.216694&restaurantId=131602&catalog_qa=undefined&submitAction=ENTER"
-      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.296116&lng=73.216694&restaurantId=77084&catalog_qa=undefined&submitAction=ENTER"
-    );
+    const data = await fetch(RES_MENU_ITEMS_URL + resId);
 
     const json = await data.json();
     setResInfo(json?.data);
@@ -34,26 +35,6 @@ const RestaurantMenu = () => {
 
   const offBoxList =
     resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers;
-
-  // For Iteration on menu
-  // console.log(
-  //   resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card
-  //     .itemCards
-  // );
-
-  console.log(
-    resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card
-      .itemCards[0].card.info
-  );
-
-  // console.log(
-  //   resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-  //     .itemCards[0].card.info
-  // );
-
-  const it1 =
-    resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card
-      .itemCards[0].card.info;
 
   const offeBox = () => {
     return (
@@ -88,6 +69,8 @@ const RestaurantMenu = () => {
   //   green: "rgb(229, 241, 211)",
   //   skyBlue: "rgb(224, 238, 245)",
   // ];
+
+  // console.log(resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards)
 
   return (
     <div className="res-menu-container">
@@ -130,27 +113,33 @@ const RestaurantMenu = () => {
         <p className="availability">{availabilityServiceabilityMessage}</p> */}
         <div className="flex">{offeBox()}</div>
       </div>
-      {/* <div className="res-menu-main">
-        <div className="res-menu-resInfo">
-          {it1.itemAttribute.vegClassifier == "NONVEG" ? <NonVeg /> : <Veg />}
-          {console.log(it1.itemAttribute.vegClassifier)}
-          <h3 className="res-item-name">{it1.name}</h3>
-          <p className="res-price">&#8377; {it1.price / 100}</p>
-          <p className="res-desc">{it1.description}</p>
-          <div className="resmenu-hrline"></div>
-        </div>
-        <button className="resImg-Btn">
-          <img
-            src={
-              "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/" +
-              it1.imageId
-            }
-            className="res-menu-img"
-          />
-        </button>
-      </div> */}
       <div className="all-res-menu">
-        <ResMenuItems />
+        {/* <ResMenuItems/> */}
+        {resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.map((v, i, arr) => (
+          <div className="res-menu-main" key={v.card.info.id}>
+            <div className="res-menu-resInfo">
+              {v.card.info.itemAttribute.vegClassifier == "NONVEG" ? (
+                <NonVeg />
+              ) : (
+                <Veg />
+              )}
+              {console.log(v)}
+              <h3 className="res-item-name">{v.card.info.name}</h3>
+              <p className="res-price">&#8377; {v.card.info.price / 100 || v.card.info.defaultPrice / 100}</p>
+              <p className="res-desc">{v.card.info.description}</p>
+              <div className="resmenu-hrline"></div>
+            </div>
+            <button className="resImg-Btn">
+              <img
+                src={
+                  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/" +
+                  v.card.info.imageId
+                }
+                className="res-menu-img"
+              />
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );
