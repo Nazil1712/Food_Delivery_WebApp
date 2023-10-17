@@ -125,7 +125,12 @@
   display: flex;
   height: 200px;
   gap: 15px;
-  transition: transform 0.3s ease; /* Smooth scrolling transition */
+}
+
+.imgl-scrollbox a{
+  display: flex;
+  height: 200px;
+  gap: 15px;
 }
 
 .hr-line {
@@ -518,5 +523,81 @@
   /* margin-top: 50px; */
   position: relative;
   top: 40px;
+}
 
+
+
+/* Collection-Page */
+.collection-container {
+  /* border: 1px solid black; */
+  width: 80vw;
+  /* height: 100vw; */
+  margin: auto;
+  font-family: "Lato", sans-serif;
+}
+
+.collection-header {
+  margin-top: 50px;
+}
+
+.collection-header h1 {
+  font-weight: 900;
+  font-size: 38px;
+}
+
+.collection-header p {
+  color: gray;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.collection-filter {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.collection-main {
+  margin-top: 20px;
+}
+.collection-main h2{
+  font-weight: 900;
+}
+
+.collection-res {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.collection-res a {
+  text-decoration: none;
+  color: black;
+}
+
+.res-card-coll {
+  width: 290px;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.res-img-coll {
+  width: 260px;
+  height: 230px;
+  border-radius: 10px;
+}
+
+.res-info-coll {
+  font-weight: 400;
+}
+
+.res-card-coll:hover {
+  border: 1px solid black;
 }

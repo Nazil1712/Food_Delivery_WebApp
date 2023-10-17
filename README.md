@@ -28,8 +28,8 @@
 - Search
 - RestaurantContainer
 - RestaurantCard
--  - Img
--  - Name of Res, Star Rating, cuisine, delery tie
+  - Img
+  - Name of Res, Star Rating, cuisine, delery tie
 - Footer
 - Copyright
 - Links
@@ -54,3 +54,27 @@ useEffect()
 # 2 types Routing in web apps
 - Client Side Routing
 - Server Side Routing
+
+
+# React Class Component LifeCycle
+<img src="./img/React_LifeCycle.png"/> 
+
+
+<h2>LifeCycle in UserClass2.js</h2>
+<h3>Mounting phase</h3>
+<p>Constructor(with default data)</p>
+<p>render(with default data)</p>
+      <p>DOM is updated</p>
+      <p>ComponentDidMount() is called
+            (In which there is this.setState() is there which will trigger render(with updated values))</p>
+<hr/>
+
+<h3>Updating phase</h3>
+<p>render(with update value[API DATA])</p>
+<p>DOM is updated</p>
+<p>ComponentDidUpdate() is called</p>
+<hr/>
+
+
+<h3>UnMounting Phase</h3>
+<p>When we will move to Other page like contact, cart etc. then componentWillUnmount() will be called</p>

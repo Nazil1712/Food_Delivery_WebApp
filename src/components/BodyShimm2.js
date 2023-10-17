@@ -125,3 +125,4 @@ const BodyShimm2 = () => {
 };
 
 export default BodyShimm2;
+export {RestauratCard};

@@ -17,6 +17,10 @@ import ImgLayoutShimm3 from "./components/ImgLayoutShimm3";
 import OffersShimm3 from "./components/OfffersShimm3";
 import OfferRoute from "./components/offerRoute";
 import RestaurantMenu from "./components/RestaurantMenu";
+import User from "./components/User";
+import HelpClass from "./components/HelpClass";
+import CollectionPage from "./components/CollectionPage";
+import CollectionPage2 from "./components/CollectionPage2";
 
 const AppLayout = () => {
   return (
@@ -63,7 +67,8 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/help",
-        element: <Help />,
+        // element: <Help />,
+        element: <HelpClass />,
       },
       {
         path: "/cart",
@@ -77,10 +82,13 @@ const appRouter = createBrowserRouter([
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
       },
+      {
+        path: "/collection/:resId",
+        element: <CollectionPage2/>
+      },
     ],
     errorElement: <ErrorElement />,
   },
-  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
