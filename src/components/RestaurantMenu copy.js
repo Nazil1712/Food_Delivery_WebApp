@@ -1,24 +1,55 @@
+import { useState, useEffect } from "react";
 import OfferShimmer from "./OfferShimmer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCircle,
+  faHeart,
   faSearch,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
-import { useParams } from "react-router-dom";
-import useResMenu from "../utils/useResMenu";
-import OffersResMenu from "./OffersResMenu";
 import ResMenuItems from "./ResMenuItems";
-import ResMenuShimmer from "./Shimmers/ResMenuShimmer";
+import { useParams } from "react-router-dom";
+import { RES_MENU_ITEMS_URL } from "../utils/constants";
+import NonVeg from "./NonVeg";
+import Veg from "./Veg";
 
 const RestaurantMenu = () => {
+  const [resInfo, setResInfo] = useState(null);
   const params = useParams();
   const { resId } = params;
 
-  const resInfo = useResMenu(resId);
+  const fetchMenu = async () => {
+    const data = await fetch(RES_MENU_ITEMS_URL + resId);
+
+    const json = await data.json();
+    setResInfo(json?.data);
+  };
+
+  useEffect(() => {
+    fetchMenu();
+  }, []);
 
   if (resInfo == null) {
-    return <ResMenuShimmer/>;
+    return <OfferShimmer />;
   }
+
+  const offBoxList =
+    resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers;
+
+  const offeBox = () => {
+    return (
+      <>
+        {offBoxList.map((v, i, arr) => (
+          <div className="offer-box" key={i}>
+            <p className="offerbox-header">{v.info.header}</p>
+            <div className="offer-codes">
+              <p>{v.info.couponCode}</p> |<p>{v.info.description}</p>
+            </div>
+          </div>
+        ))}
+      </>
+    );
+  };
 
   const {
     name,
@@ -30,6 +61,16 @@ const RestaurantMenu = () => {
     availabilityServiceabilityMessage,
     costForTwoMessage,
   } = resInfo?.cards[0]?.card?.card?.info;
+
+  // const bgColors = [
+  //   {}
+  //   pink: "rgb(246, 230, 233)",
+  //   yellow: "rgb(251, 238, 215)",
+  //   green: "rgb(229, 241, 211)",
+  //   skyBlue: "rgb(224, 238, 245)",
+  // ];
+
+  // console.log(resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards)
 
   return (
     <div className="res-menu-container">
@@ -64,10 +105,35 @@ const RestaurantMenu = () => {
         <div className="head3-first">
           <p>{costForTwoMessage}</p>
         </div>
-        <div className="flex"><OffersResMenu resInfo={resInfo}/></div>
+        <div className="flex">{offeBox()}</div>
       </div>
       <div className="all-res-menu">
-        <ResMenuItems resInfo={resInfo}/>
+        {/* <ResMenuItems/> */}
+        {resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.map((v, i, arr) => (
+          <div className="res-menu-main" key={v.card.info.id}>
+            <div className="res-menu-resInfo">
+              {v.card.info.itemAttribute.vegClassifier == "NONVEG" ? (
+                <NonVeg />
+              ) : (
+                <Veg />
+              )}
+              {console.log(v)}
+              <h3 className="res-item-name">{v.card.info.name}</h3>
+              <p className="res-price">&#8377; {v.card.info.price / 100 || v.card.info.defaultPrice / 100}</p>
+              <p className="res-desc">{v.card.info.description}</p>
+              <div className="resmenu-hrline"></div>
+            </div>
+            <button className="resImg-Btn">
+              <img
+                src={
+                  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/" +
+                  v.card.info.imageId
+                }
+                className="res-menu-img"
+              />
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );

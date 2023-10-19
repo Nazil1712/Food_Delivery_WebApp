@@ -21,10 +21,10 @@ const ImgLayoutShimm3 = () => {
     );
 
     const json = await data.json();
-    console.log(json);
-    console.log(
-      json.data.cards[1].card.card.imageGridCards.info[0].entityId.slice(36, 41)
-    );
+    // console.log(json);
+    // console.log(
+    //   json.data.cards[1].card.card.imageGridCards.info[0].entityId.slice(36, 41)
+    // );
     setMyImgLayout(json.data.cards[1].card.card.imageGridCards.info);
   };
 
@@ -55,8 +55,8 @@ const ImgLayoutShimm3 = () => {
           </div>
           <div className="imgl-scrollbox">
             {myImgLayout.map((v) => (
-              <Link to={"/collection/" + v.entityId.slice(36, 41)}>
-                <img src={IMG_LAYOUT_URL + v.imageId} key={v.id} />
+              <Link to={"/collection/" + v.entityId.slice(36, 41)} key={v.id}>
+                <img src={IMG_LAYOUT_URL + v.imageId}  />
               </Link>
             ))}
           </div>

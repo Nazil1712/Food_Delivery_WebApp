@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import OfferShimmer from "./OfferShimmer";
+import { Link } from "react-router-dom";
 
 const OffersShimm3 = () => {
   const [myOffers, setMyOffers] = useState([]);
@@ -28,11 +29,9 @@ const OffersShimm3 = () => {
     fetchData();
   }, []);
 
-  const offersList = myOffers.map((v) => (
-    <img src={OFFERS_IMG_URL + v.imageId} key={v.id} />
-  ));
-
-  return myOffers.length==0? <OfferShimmer/> :(
+  return myOffers.length == 0 ? (
+    <OfferShimmer />
+  ) : (
     <div className="offers-container">
       <div className="mind-container">
         <p>Best offers for you</p>
@@ -49,7 +48,15 @@ const OffersShimm3 = () => {
           />
         </div>
       </div>
-      <div className="offers-scrollbox">{offersList}</div>
+      <div className="offers-scrollbox">
+        {myOffers.map((v) => {
+          return (
+            <Link to={"/collection/" + v.entityId} key={v.id}>
+              <img src={OFFERS_IMG_URL + v.imageId} />
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 };

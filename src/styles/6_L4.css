@@ -42,6 +42,13 @@
   display: flex;
 }
 
+.green-dot {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+}
 .nav-items ul li {
   padding: 0px 35px;
   margin: 5px;
@@ -51,6 +58,11 @@
   color: orangered;
 }
 
+.nav-items ul li {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
 .nav-items ul li a {
   text-decoration: none;
   color: black;
@@ -75,7 +87,14 @@
   width: 300px;
 }
 
-.offers-scrollbox {
+.offers-scrollbox{
+  display: flex;
+  height: 250px;
+  position: relative;
+  /* top: 20px;  */
+  gap: 15px;
+}
+.offers-scrollbox a{
   display: flex;
   height: 250px;
   position: relative;
@@ -433,36 +452,38 @@
 }
 
 .res-menu-main {
+  /* width: 80vw; */
   margin-top: 40px;
-  height: 180px;
+  /* height: 180px; */
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
-.res-menu-resInfo {
+/* .res-menu-resInfo {
   width: 37vw;
+  height: auto;
+} */
+.res-menu-resInfo {
+  /* width: 37vw; */
+  display: flex;
+  flex-direction: column;
   height: auto;
 }
 
-.res-menu-resImg{
-  position: absolute;
-}
+
 
 .res-menu-img {
-  width: 9vw;
-  position: absolute;
+  width: 8vw;
 }
 
 .resImg-Btn {
   background-color: rgb(246, 230, 233);
   border: none;
   border-radius: 20px;
-  width: 9vw;
+  width: 10vw;
   height: 8vw;
-  position: relative;
-  left: 600px;
-  bottom: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .non-veg-box {
@@ -517,12 +538,10 @@
 }
 
 .resmenu-hrline {
-  width: 49vw;
-  background-color: #adababac;;
-  height: 1px;
-  /* margin-top: 50px; */
-  position: relative;
-  top: 40px;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 2px;
+  margin-top: 25px;
 }
 
 
@@ -531,7 +550,6 @@
 .collection-container {
   /* border: 1px solid black; */
   width: 80vw;
-  /* height: 100vw; */
   margin: auto;
   font-family: "Lato", sans-serif;
 }
@@ -601,3 +619,5 @@
 .res-card-coll:hover {
   border: 1px solid black;
 }
+
+

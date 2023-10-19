@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { resData } from "../utils/mockData";
-import { RES_IMG_URL } from "../utils/constants";
+import { resData } from "../../utils/mockData";
+import { RES_IMG_URL } from "../../utils/constants";
 
-const RestauratCard = ({
+const RestaurantCard = ({
   foodImg,
   resName,
   cuisines,
@@ -49,20 +49,21 @@ const BodyShimmer = () => {
         </div>
       </div>
       <div className="shimm-container">
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
-        <RestauratCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
       </div>
     </div>
   );
 };
 
+export {RestaurantCard}
 export default BodyShimmer;

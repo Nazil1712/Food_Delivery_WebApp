@@ -1,14 +1,15 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
+/* 
 // Normal
-import Header from "./components/Header";
 import ImgLayout from "./components/ImgLayout";
 import Body from "./components/Body";
-import ErrorElement from "./components/ErrorElement";
+*/
 
 // Shimmers
+import Header from "./components/Header";
 import BodyShimm2 from "./components/BodyShimm2";
 import Help from "./components/Help";
 import Cart from "./components/Cart";
@@ -19,8 +20,15 @@ import OfferRoute from "./components/offerRoute";
 import RestaurantMenu from "./components/RestaurantMenu";
 import User from "./components/User";
 import HelpClass from "./components/HelpClass";
-import CollectionPage from "./components/CollectionPage";
 import CollectionPage2 from "./components/CollectionPage2";
+import CollectionPageShimmer from "./components/Shimmers/CollectionPageShimmer";
+import ResMenuShimmer from "./components/Shimmers/ResMenuShimmer";
+import ErrorElement from "./components/ErrorElement";
+import BodyShimmer from "./components/Shimmers/BodyShimmer";
+// import Grocery from "./components/Grocery";
+
+// Lazy Loading
+const Grocery = lazy(() => import("./components/Grocery"));
 
 const AppLayout = () => {
   return (
@@ -84,7 +92,15 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/collection/:resId",
-        element: <CollectionPage2/>
+        element: <CollectionPage2 />,
+      },
+      {
+        path: "/grocery",
+        element: (
+          <Suspense fallback={<h1>Loading..........</h1>}>
+            <Grocery />
+          </Suspense>
+        ),
       },
     ],
     errorElement: <ErrorElement />,

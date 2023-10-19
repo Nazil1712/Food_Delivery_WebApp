@@ -78,3 +78,14 @@ useEffect()
 
 <h3>UnMounting Phase</h3>
 <p>When we will move to Other page like contact, cart etc. then componentWillUnmount() will be called</p>
+
+
+
+# For large Web Apps
+- For large Web Apps We make small bundles of our files, This thing have different name in market :-
+      - Chunking
+      - Code Splitting
+      - Lazy Loading
+      - Dynamic loading
+      - On demand loading
+      - Dynamic import 

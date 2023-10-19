@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { RestauratCard } from "./BodyShimm2";
-import BodyShimmer from "./BodyShimmer";
 import {
   COLLECTION_API_URL1,
   COLLECTION_API_URL2,
@@ -8,6 +7,7 @@ import {
 } from "../utils/constants";
 import ResCardCollection from "./ResCardCollection";
 import { Link, useParams } from "react-router-dom";
+import CollectionPageShimmer from "./Shimmers/CollectionPageShimmer";
 
 const CollectionPage2 = () => {
   const { resId } = useParams();
@@ -19,9 +19,7 @@ const CollectionPage2 = () => {
 
     let json = await data.json();
     setResData(json.data.cards[0].card.card);
-    // console.log(json.data.cards[0].card.card)
     json = json.data.cards.slice(3, json.length);
-    console.log(json);
     setResList(json);
   };
 
@@ -29,7 +27,7 @@ const CollectionPage2 = () => {
     fetchData();
   }, []);
 
-  return (
+  return resData.length==0 || resList.length==0? <CollectionPageShimmer/>:(
     <div className="collection-container">
       <div className="collection-header">
         <h1>{resData.title}</h1>
@@ -42,11 +40,6 @@ const CollectionPage2 = () => {
       <div className="collection-main">
         <h2>Restaurants to explore</h2>
         <div className="collection-res">
-          {/* <RestauratCard 
-            foodImg={COLLECTION_RES_IMG_URL + resList.imageId}
-            resName={resList.name}
-            cuisines={resList.description}
-          /> */}
           {resList.map((v, i, arr) => (
             <Link
               to={"/restaurants/" + v.card.card.info.id}

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import { resData } from "../utils/mockData";
 import { RES_IMG_URL } from "../utils/constants";
-import BodyShimmer from "./BodyShimmer";
+import BodyShimmer from "./Shimmers/BodyShimmer";
 import { Link } from "react-router-dom";
 
 const RestauratCard = ({
@@ -38,14 +38,11 @@ const BodyShimm2 = () => {
   const [searchText, setSearchText] = useState("");
 
   const fetchData = async () => {
-    // const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
 
     const json = await data.json();
-
-    // console.log(json.data.cards[5].card.card.gridElements.infoWithStyle.restaurants)
     setresStateData(
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
