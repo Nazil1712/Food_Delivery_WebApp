@@ -89,3 +89,16 @@ useEffect()
       - Dynamic loading
       - On demand loading
       - Dynamic import 
+
+
+# Different popular ways to add CSS
+- Tailwind CSS
+- Sass and SCSS
+- Style Components
+- Material UI
+- Bootstrap
+- Chakra UI
+- Ant Design etc..
+
+
+

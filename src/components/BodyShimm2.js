@@ -14,7 +14,7 @@ const RestauratCard = ({
   delvTime,
 }) => {
   return (
-    <div className="res-card">
+    <div className="res-card hover:scale-95">
       <div className="res-logo">
         <img className="res-img" src={foodImg}></img>
       </div>

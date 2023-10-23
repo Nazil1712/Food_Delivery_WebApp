@@ -36,7 +36,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-font-awesome-5": "^0.2.2",
-    "react-router-dom": "^6.16.0"
+    "react-router-dom": "^6.16.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "browserlist": [
     "last 2 version"

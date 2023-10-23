@@ -9,7 +9,7 @@ const ResCardCollection = ({
   delvTime,
 }) => {
   return (
-    <div className="res-card-coll">
+    <div className="res-card-coll hover:scale-95">
       <div className="res-logo-coll">
         <img className="res-img-coll" src={foodImg}></img>
       </div>

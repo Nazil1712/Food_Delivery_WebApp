@@ -178,7 +178,7 @@
   font-size: 38px;
   background-color: #f0f0f0;
   height: 50px;
-  width: 270px;
+  width: 250px;
   border-radius: 50px;
 }
 
@@ -188,9 +188,9 @@
   font-size: 38px;
   background-color: #f0f0f0;
   height: 15px;
-  width: 350px;
+  width: 550px;
   border-radius: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .collection-filter-shimm {
@@ -251,9 +251,7 @@
   font-weight: 400;
 }
 
-.res-card-coll:hover {
-  border: 1px solid black;
-}
+
 
 .coll-shimm-img {
   background-color: #f0f0f0;

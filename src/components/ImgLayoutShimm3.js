@@ -1,69 +1,70 @@
-import { imgLayout, offers } from "../utils/mockData";
-import { IMG_LAYOUT_URL, OFFERS_IMG_URL } from "../utils/constants";
+import { IMG_LAYOUT_URL } from "../utils/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { offers } from "../utils/mockData";
 import {
   faCircleArrowRight,
   faCircleArrowLeft,
-  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
 import ImgLayoutShimmer from "./ImgLayoutShimmer";
 import { Link } from "react-router-dom";
+import useImgLayout from "../utils/useImgLayout";
+import { Suspense } from "react";
 
 const ImgLayoutShimm3 = () => {
-  const [myImgLayout, setMyImgLayout] = useState([]);
-  const [id, setId] = useState(null);
+  const myImgLayout = useImgLayout();
 
-  const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.296116&lng=73.216694&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
 
-    const json = await data.json();
-    // console.log(json);
-    // console.log(
-    //   json.data.cards[1].card.card.imageGridCards.info[0].entityId.slice(36, 41)
-    // );
-    setMyImgLayout(json.data.cards[1].card.card.imageGridCards.info);
-  };
+  const scrollLeft = () =>{
+    let slider = document.getElementById("slider")
+    slider.scrollLeft = slider.scrollLeft - 500;
+  }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const scrollRight = () =>{
+    let slider = document.getElementById("slider")
+    slider.scrollLeft = slider.scrollLeft + 500
+  }
 
   return myImgLayout.length == 0 ? (
     <ImgLayoutShimmer />
   ) : (
-    <>
-      <div className="lo">
-        <div className="imagelayout-container imgL2">
-          <div className="mind-container">
-            <p>What's on your mind?</p>
-            <div className="arrow-container">
-              <FontAwesomeIcon
-                icon={faCircleArrowLeft}
-                style={{ color: "#dfba34" }}
-                size="2xl"
-              />
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                style={{ color: "#dfba34" }}
-                size="2xl"
-              />
-            </div>
-          </div>
-          <div className="imgl-scrollbox">
-            {myImgLayout.map((v) => (
-              <Link to={"/collection/" + v.entityId.slice(36, 41)} key={v.id}>
-                <img src={IMG_LAYOUT_URL + v.imageId}  />
-              </Link>
-            ))}
-          </div>
-          <div className="hr-line"></div>
+    <div className="w-[70vw] mx-auto relative cursor-pointer top-5 h-270">
+      <div className="flex w-[70vw] justify-between">
+        <div className="">
+          <p className="font-lato font-black text-xl">What's on your mind?</p>
+        </div>
+        <div className="flex gap-5 relative bottom-3">
+          <FontAwesomeIcon
+            icon={faCircleArrowLeft}
+            style={{ color: "#dfba34" }}
+            size="2xl"
+            onClick={scrollLeft}
+            className="opacity-70 hover:opacity-100"
+            />
+          <FontAwesomeIcon
+            icon={faCircleArrowRight}
+            style={{ color: "#dfba34" }}
+            size="2xl"
+            onClick={scrollRight}
+            className="opacity-70 hover:opacity-100"
+          />
         </div>
       </div>
-    </>
+      <div id="slider" className="flex overflow-x-scroll scroll-smooth whitespace-nowrap scrollbar-hide">
+        <div className="flex flex-shrink-0 scroll h-200 gap-15 w-80vw">
+          {myImgLayout.map((v) => (
+            <Link
+              to={"/collection/" + v.entityId.slice(36, 41)}
+              key={v.id}
+              className="w-[150px]"
+            >
+              <div>
+                <img src={IMG_LAYOUT_URL + v.imageId} className="" />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+      <div className="hr-line"></div>
+    </div>
   );
 };
 

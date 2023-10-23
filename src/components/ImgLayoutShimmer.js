@@ -23,7 +23,7 @@ const ImgLayoutShimmer = () => {
         <div className="shimm-arrow"></div>
         <div className="shimm-arrow"></div>
       </div>
-      <div className="imgl-scrollbox">
+      <div className="flex">
         <Circle />
         <Circle />
         <Circle />

@@ -140,17 +140,6 @@
   gap: 10px;
 }
 
-.imgl-scrollbox {
-  display: flex;
-  height: 200px;
-  gap: 15px;
-}
-
-.imgl-scrollbox a{
-  display: flex;
-  height: 200px;
-  gap: 15px;
-}
 
 .hr-line {
   background-color: #f0f0f0;
@@ -158,7 +147,8 @@
   width: 70vw;
   height: 2px;
   position: relative;
-  top: 20px;
+  /* top: 20px; */
+  margin-top: 35px;
 }
 
 /* .scroll-btn {
@@ -182,7 +172,7 @@
 
 /* Body Section */
 .body {
-  margin-top: 40px;
+  margin-top: 100px;
   font-family: "Lato", sans-serif;
 }
 
@@ -287,7 +277,7 @@
   font-weight: 400;
 }
 .res-card:hover {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   cursor: pointer;
 }
 
@@ -484,6 +474,9 @@
   border-radius: 20px;
   width: 10vw;
   height: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .non-veg-box {
@@ -616,8 +609,8 @@
   font-weight: 400;
 }
 
-.res-card-coll:hover {
+/* .res-card-coll:hover {
   border: 1px solid black;
-}
+} */
 
 
