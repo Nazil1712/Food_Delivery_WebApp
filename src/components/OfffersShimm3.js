@@ -17,12 +17,12 @@ const OffersShimm3 = () => {
 
   const scrollLeft = () =>{
     let slider = document.getElementById("offers-slider")
-    slider.scrollLeft = slider.scrollLeft - 1000;
+    slider.scrollLeft = slider.scrollLeft - 500;
   }
 
   const scrollRight = () =>{
     let slider = document.getElementById("offers-slider")
-    slider.scrollLeft = slider.scrollLeft + 1000
+    slider.scrollLeft = slider.scrollLeft + 500
   }
 
   return myOffers.length == 0 ? (

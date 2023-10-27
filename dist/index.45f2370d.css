@@ -1,0 +1,545 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap";
+:root {
+  --resmenugray: #80808092;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  z-index: 2;
+  background-color: #fff;
+  align-items: center;
+  height: 85px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  display: flex;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 30px #838282;
+}
+
+.header-container {
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+}
+
+.green-dot {
+  background-color: green;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.nav-items ul li {
+  margin: 5px;
+  padding: 0 35px;
+}
+
+.nav-items ul li :hover {
+  color: #ff4500;
+}
+
+.nav-items ul li, .nav-items ul li a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.offers-container {
+  cursor: pointer;
+  width: 70vw;
+  height: 370px;
+  margin: auto;
+  position: relative;
+  top: 35px;
+  overflow: hidden;
+}
+
+.offers-container p {
+  width: 300px;
+  font-family: Lato, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.offers-scrollbox {
+  gap: 15px;
+  height: 250px;
+  display: flex;
+  position: relative;
+}
+
+.offers-scrollbox a {
+  gap: 15px;
+  height: 250px;
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+
+.imagelayout-container {
+  cursor: pointer;
+  width: 70vw;
+  height: 270px;
+  margin: auto;
+  position: relative;
+  top: 5px;
+  overflow: hidden;
+}
+
+.imgL2 {
+  position: relative;
+}
+
+.mind-container {
+  width: 70vw;
+  display: flex;
+}
+
+.mind-container p {
+  width: 300px;
+  font-family: Lato, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.arrow-container {
+  justify-content: flex-end;
+  gap: 10px;
+  width: 70vw;
+  display: flex;
+}
+
+.hr-line {
+  background-color: #f0f0f0;
+  width: 70vw;
+  height: 2px;
+  margin: 35px auto auto;
+  position: relative;
+}
+
+.body {
+  margin-top: 100px;
+  font-family: Lato, sans-serif;
+}
+
+.body-heading {
+  font-family: Lato, sans-serif;
+  font-size: x-large;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+  left: 222px;
+}
+
+.body-heading p {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.filter {
+  align-items: center;
+  gap: 30px;
+  width: 70vw;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  left: 236px;
+}
+
+.filter-btn {
+  background-color: #fff;
+  border: 1px solid #acaaaa;
+  border-radius: 50px;
+  height: 40px;
+  font-family: Lato, sans-serif;
+  transition: all .25s;
+  display: inline-block;
+  box-shadow: 5px 5px 10px #e5e5e5;
+}
+
+.filter-btn1 {
+  width: 95px;
+}
+
+.filter-btn2 {
+  width: 105px;
+}
+
+.filter-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff44009f;
+}
+
+.search-box {
+  background-color: #fff;
+  border: 1px solid #acaaaa;
+  border-radius: 50px;
+  outline: none;
+  width: 275px;
+  height: 40px;
+  padding-left: 15px;
+  font-family: Lato, sans-serif;
+  font-size: 13.333px;
+  box-shadow: 5px 5px 10px #e5e5e5;
+}
+
+.search-icon {
+  cursor: pointer;
+  position: absolute;
+  left: 245px;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 70vw;
+  margin: 40px auto auto;
+  display: flex;
+}
+
+.res-container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.res-card {
+  width: 250px;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.res-img {
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+}
+
+.res-info {
+  font-weight: 400;
+}
+
+.res-card:hover {
+  cursor: pointer;
+}
+
+.res-menu-container {
+  width: 50vw;
+  margin: 50px auto auto;
+  font-family: Lato, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.heart {
+  height: 25px;
+  position: relative;
+  right: 15px;
+}
+
+.res-menu-head1 {
+  width: 100px;
+  position: relative;
+  left: 700px;
+}
+
+.res-menu-search {
+  height: 25px;
+  position: relative;
+  left: 15px;
+}
+
+.res-menu-resname {
+  font-weight: 900;
+}
+
+.res-menu-head2 {
+  margin-top: 15px;
+}
+
+.res-menu-resinfo {
+  color: gray;
+  font-size: 14px;
+}
+
+.res-menu-resinfo1 {
+  margin-top: 7px;
+}
+
+.res-menu-ratings {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 7px;
+  width: 65px;
+  min-height: 64px;
+  max-height: 100px;
+  position: relative;
+  bottom: 55px;
+  left: 700px;
+}
+
+.avgRating {
+  color: green;
+  font-weight: 900;
+}
+
+.ratings-hrline {
+  background-color: gray;
+  width: 51px;
+  height: 1px;
+  position: relative;
+  top: 11px;
+  left: 6px;
+}
+
+.tRating {
+  color: gray;
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+.resmenu-head2-hrline {
+  border: 1px dashed var(--resmenugray);
+  width: 70vw;
+  height: 1px;
+  margin-bottom: 15px;
+  position: relative;
+  bottom: 40px;
+}
+
+.res-menu-head3 {
+  margin-top: -42px;
+}
+
+.head3-first {
+  gap: 20px;
+  font-weight: 900;
+  display: flex;
+}
+
+.triangle {
+  z-index: -1;
+  background-color: #c2c0c061;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 7px;
+  bottom: 15px;
+  left: 50px;
+  transform: rotate(45deg);
+}
+
+.availability {
+  color: #ff4500;
+  background-color: #c2c0c061;
+  border-radius: 5px;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  position: relative;
+}
+
+.offer-box {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  height: auto;
+  min-height: 55px;
+  font-family: Lato, sans-serif;
+}
+
+.offerbox-header {
+  color: #000000b7;
+  font-weight: 900;
+}
+
+.offer-codes {
+  color: gray;
+  gap: 5px;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 900;
+  display: flex;
+}
+
+.flex {
+  gap: 15px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.all-res-menu {
+  margin-top: 50px;
+}
+
+.res-menu-main {
+  justify-content: space-between;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+}
+
+.res-menu-resInfo {
+  flex-direction: column;
+  height: auto;
+  display: flex;
+}
+
+.res-menu-img {
+  width: 8vw;
+}
+
+.resImg-Btn {
+  background-color: #f6e6e9;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 8vw;
+  display: flex;
+}
+
+.non-veg-box {
+  background-color: #0000;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 16px;
+  display: flex;
+}
+
+.non-veg-triangle {
+  border-bottom: 12px solid red;
+  border-left: 7px solid #0000;
+  border-right: 7px solid #0000;
+  width: 0;
+  height: 0;
+}
+
+.veg-box {
+  background-color: #0000;
+  border: 1px solid green;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 16px;
+  display: flex;
+}
+
+.veg-circle {
+  background-color: green;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.res-item-name {
+  font-size: 17px;
+}
+
+.res-price {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.res-desc {
+  color: gray;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.resmenu-hrline {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 2px;
+  margin-top: 25px;
+}
+
+.collection-container {
+  width: 80vw;
+  margin: auto;
+  font-family: Lato, sans-serif;
+}
+
+.collection-header {
+  margin-top: 50px;
+}
+
+.collection-header h1 {
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.collection-header p {
+  color: gray;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.collection-filter {
+  gap: 15px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.collection-main {
+  margin-top: 20px;
+}
+
+.collection-main h2 {
+  font-weight: 900;
+}
+
+.collection-res {
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 80vw;
+  margin: 40px auto auto;
+  display: flex;
+}
+
+.collection-res a {
+  color: #000;
+  text-decoration: none;
+}
+
+.res-card-coll {
+  flex-direction: column;
+  place-content: center;
+  width: 290px;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+}
+
+.res-img-coll {
+  border-radius: 10px;
+  width: 260px;
+  height: 230px;
+}
+
+.res-info-coll {
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=index.45f2370d.css.map */

@@ -20,7 +20,7 @@ root.render(heading) */
     </div>
 */
 
-const parent = React.createElement(
+/* const parent = React.createElement(
     "div",
     { id: "parent" },
     React.createElement("div", {id:"child"},
@@ -30,7 +30,7 @@ const parent = React.createElement(
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-root.render(parent)
+root.render(parent) */
 
 
 // 3)

@@ -1,35 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
-import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faSearch} from "@fortawesome/free-solid-svg-icons";
 import { resData } from "../utils/mockData";
 import { RES_IMG_URL } from "../utils/constants";
 import BodyShimmer from "./Shimmers/BodyShimmer";
 import { Link } from "react-router-dom";
+import RestauratCard from "./RestaurantCard";
 
-const RestauratCard = ({
-  foodImg,
-  resName,
-  cuisines,
-  resRatings,
-  delvTime,
-}) => {
-  return (
-    <div className="res-card hover:scale-95">
-      <div className="res-logo">
-        <img className="res-img" src={foodImg}></img>
-      </div>
-      <div>
-        <h3>{resName}</h3>
-        <h4 className="res-info">{cuisines}</h4>
-        <h4 className="res-info">
-          {resRatings}{" "}
-          <FontAwesomeIcon icon={faStar} style={{ color: "#49bc56" }} />
-        </h4>
-        <h4 className="res-info">{delvTime} Minutes</h4>
-      </div>
-    </div>
-  );
-};
 
 const BodyShimm2 = () => {
   const [resStateData, setresStateData] = useState([]);
@@ -105,7 +82,11 @@ const BodyShimm2 = () => {
       </div>
       <div className="res-container">
         {myfilteredRestaurant.map((v, i, arr) => (
-          <Link to={"/restaurants/" + v.info.id} key={v.info.id} className=".link-tag">
+          <Link
+            to={"/restaurants/" + v.info.id}
+            key={v.info.id}
+            className=".link-tag"
+          >
             <RestauratCard
               foodImg={RES_IMG_URL + v.info.cloudinaryImageId}
               resName={v.info.name}
@@ -121,5 +102,8 @@ const BodyShimm2 = () => {
   );
 };
 
+
+
+
 export default BodyShimm2;
-export {RestauratCard};
+export { RestauratCard };
