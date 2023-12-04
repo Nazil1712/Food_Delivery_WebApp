@@ -14,7 +14,7 @@ const ResCardCollection = ({
         <img className="res-img-coll" src={foodImg}></img>
       </div>
       <div>
-        <h3>{resName}</h3>
+        <h3 className="text-xl font-bold">{resName}</h3>
         <h4 className="res-info-coll">{cuisines.join(", ")}</h4>
         <h4 className="res-info-coll">
           {resRatings}{" "}

@@ -6,6 +6,7 @@ import useResMenu from "../utils/useResMenu";
 import OffersResMenu from "./OffersResMenu";
 import ResMenuItems from "./ResMenuItems";
 import ResMenuShimmer from "./Shimmers/ResMenuShimmer";
+import RestaurantAccordion from "./RestaurantAccordion";
 
 const RestaurantMenu = () => {
   const params = useParams();
@@ -27,6 +28,7 @@ const RestaurantMenu = () => {
     availabilityServiceabilityMessage,
     costForTwoMessage,
   } = resInfo?.cards[0]?.card?.card?.info;
+
 
   return (
     <div className="res-menu-container">
@@ -69,9 +71,11 @@ const RestaurantMenu = () => {
           <OffersResMenu resInfo={resInfo} />
         </div>
       </div>
-      <div className="all-res-menu">
+      {/* <div className="all-res-menu">
         <ResMenuItems resInfo={resInfo} />
-      </div>
+      </div> */}
+
+      <RestaurantAccordion resInfo={resInfo}/>
     </div>
   );
 };

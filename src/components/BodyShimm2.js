@@ -5,12 +5,15 @@ import { resData } from "../utils/mockData";
 import { RES_IMG_URL } from "../utils/constants";
 import BodyShimmer from "./Shimmers/BodyShimmer";
 import { Link } from "react-router-dom";
-import RestauratCard from "./RestaurantCard";
-
+import RestauratCard , {withPromotedLabel} from "./RestaurantCard";
 
 const BodyShimm2 = () => {
   const [resStateData, setresStateData] = useState([]);
   const [myfilteredRestaurant, setMyfilteredRestaurant] = useState([]);
+
+  console.log(resStateData)
+
+  const RestaurantCardPromoted = withPromotedLabel(RestauratCard);
 
   const [searchText, setSearchText] = useState("");
 
@@ -95,6 +98,21 @@ const BodyShimm2 = () => {
               delvTime={v.info.sla.deliveryTime}
               v={v}
             />
+
+            {/* Beacuse newer version of API doesn't have promoted feature hence we are not adding it, but if it had then we could render our ResCard like this! */}
+            {/* {data.label.promted ? <RestaurantCardPromoted/> : <RestauratCard/>} */}``
+
+            {/* Just trying to render ResCard with promoted label , to see how it looks! */}
+            {/* <RestaurantCardPromoted
+              foodImg={RES_IMG_URL + v.info.cloudinaryImageId}
+              resName={v.info.name}
+              cuisines={v.info.cuisines.join(", ")}
+              resRatings={v.info.avgRating}
+              delvTime={v.info.sla.deliveryTime}
+              v={v}
+            /> */}
+
+
           </Link>
         ))}
       </div>

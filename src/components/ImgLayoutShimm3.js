@@ -12,7 +12,6 @@ import { Suspense } from "react";
 const ImgLayoutShimm3 = () => {
   const myImgLayout = useImgLayout();
 
-
   const scrollLeft = () =>{
     let slider = document.getElementById("slider")
     slider.scrollLeft = slider.scrollLeft - 500;

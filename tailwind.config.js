@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'lato':['lato','sans-serif']
+      },
+      colors:{
+        'text-color':'#3e4152',
+        'hr-line':'#f1f1f6'
       }
     },
   },

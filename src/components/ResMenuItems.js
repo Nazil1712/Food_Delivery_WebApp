@@ -2,19 +2,20 @@ import NonVeg from "./NonVeg";
 import Veg from "./Veg";
 
 const ResMenuItems = ({ resInfo }) => {
+  // console.log(resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards)
+
   return (
     <>
       {resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.map(
         (v, i, arr) => (
-          <>
-            <div className="res-menu-main" key={v.card.info.id}>
+          <div key={v.card.info.id}>
+            <div className="res-menu-main" >
               <div className="res-menu-resInfo">
                 {v.card.info.itemAttribute.vegClassifier == "NONVEG" ? (
                   <NonVeg />
                 ) : (
                   <Veg />
                 )}
-                {console.log(v)}
                 <h3 className="res-item-name">{v.card.info.name}</h3>
                 <p className="res-price">
                   &#8377;{" "}
@@ -36,7 +37,7 @@ const ResMenuItems = ({ resInfo }) => {
               </div>
             </div>
             <div className="resmenu-hrline"></div>
-          </>
+          </div>
         )
       )}
     </>

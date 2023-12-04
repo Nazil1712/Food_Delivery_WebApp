@@ -15,7 +15,7 @@ const RestauratCard = ({
         <img className="res-img" src={foodImg}></img>
       </div>
       <div>
-        <h3>{resName}</h3>
+        <h3 className="text-xl font-bold">{resName}</h3>
         <h4 className="res-info">{cuisines}</h4>
         <h4 className="res-info">
           {resRatings}{" "}
@@ -27,16 +27,16 @@ const RestauratCard = ({
   );
 };
 
-const withPromotedLabel = (RestauratCard) => {
-    return () => {
-      return (
-        <>
-          <label>Promoted</label>
-          {RestauratCard}
-        </>
-      );
-    };
-  };
+const withPromotedLabel = (RestaurantCard) =>{
+  return (props)=>{
+    return(
+      <>
+      <label className="absolute bg-black text-white rounded-lg">Promoted</label>
+      <RestaurantCard {...props}/>
+      </>
+    )
+  }
+}
 
 export default RestauratCard;
-export {withPromotedLabel}
+export {withPromotedLabel};
