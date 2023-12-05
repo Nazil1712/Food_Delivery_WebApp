@@ -62494,15 +62494,18 @@ var _resMenuShimmer = require("./Shimmers/ResMenuShimmer");
 var _resMenuShimmerDefault = parcelHelpers.interopDefault(_resMenuShimmer);
 var _restaurantAccordion = require("./RestaurantAccordion");
 var _restaurantAccordionDefault = parcelHelpers.interopDefault(_restaurantAccordion);
+var _react = require("react");
 var _s = $RefreshSig$();
 const RestaurantMenu = ()=>{
     _s();
     const params = (0, _reactRouterDom.useParams)();
     const { resId } = params;
     const resInfo = (0, _useResMenuDefault.default)(resId);
+    // default value 0 ==> indicates that 0th index Accordion will be true by default
+    const [showIndex, setShowIndex] = (0, _react.useState)(0);
     if (resInfo == null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resMenuShimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 18,
+        lineNumber: 21,
         columnNumber: 12
     }, undefined);
     const { name, cuisines, cloudinaryImageId, areaName, avgRating, totalRatingsString, availabilityServiceabilityMessage, costForTwoMessage } = resInfo?.cards[0]?.card?.card?.info;
@@ -62524,17 +62527,17 @@ const RestaurantMenu = ()=>{
                                 d: "M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantMenu.js",
-                                lineNumber: 51,
+                                lineNumber: 54,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/RestaurantMenu.js",
-                            lineNumber: 45,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 44,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -62544,18 +62547,18 @@ const RestaurantMenu = ()=>{
                             className: "res-menu-search"
                         }, void 0, false, {
                             fileName: "src/components/RestaurantMenu.js",
-                            lineNumber: 55,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 54,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 43,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -62566,7 +62569,7 @@ const RestaurantMenu = ()=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 59,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -62574,7 +62577,7 @@ const RestaurantMenu = ()=>{
                         children: cuisines.join(", ")
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 60,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -62582,7 +62585,7 @@ const RestaurantMenu = ()=>{
                         children: areaName
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 63,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -62595,21 +62598,21 @@ const RestaurantMenu = ()=>{
                                         icon: (0, _freeSolidSvgIcons.faStar)
                                     }, void 0, false, {
                                         fileName: "src/components/RestaurantMenu.js",
-                                        lineNumber: 66,
+                                        lineNumber: 69,
                                         columnNumber: 13
                                     }, undefined),
                                     avgRating
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestaurantMenu.js",
-                                lineNumber: 65,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "ratings-hrline"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantMenu.js",
-                                lineNumber: 69,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -62617,26 +62620,26 @@ const RestaurantMenu = ()=>{
                                 children: totalRatingsString
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantMenu.js",
-                                lineNumber: 70,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 64,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "resmenu-head2-hrline"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 72,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 58,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -62648,12 +62651,12 @@ const RestaurantMenu = ()=>{
                             children: costForTwoMessage
                         }, void 0, false, {
                             fileName: "src/components/RestaurantMenu.js",
-                            lineNumber: 76,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 75,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -62662,35 +62665,38 @@ const RestaurantMenu = ()=>{
                             resInfo: resInfo
                         }, void 0, false, {
                             fileName: "src/components/RestaurantMenu.js",
-                            lineNumber: 79,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.js",
-                        lineNumber: 78,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 74,
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined),
-            category.map((v, i, arr)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantAccordionDefault.default), {
-                    resInfo: v
-                }, void 0, false, {
+            category.map((v, i, arr)=>// Controlled component
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantAccordionDefault.default), {
+                    resInfo: v,
+                    showItems: i == showIndex ? true : false,
+                    setShowIndex: ()=>setShowIndex(i)
+                }, v.card.card.title, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 87,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 42,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
-_s(RestaurantMenu, "1/t8oFLO5tw8lsuenVWQhPiEo7k=", false, function() {
+_s(RestaurantMenu, "ztN82Km5jqWw6Jp0Ep2cnqePKbk=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useResMenuDefault.default)
@@ -62706,7 +62712,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./OfferShimmer":"1C6e9","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","react-router-dom":"9xmpe","../utils/useResMenu":"lTaTN","./OffersResMenu":"at0aa","./ResMenuItems":"jM200","./Shimmers/ResMenuShimmer":"ffMYk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantAccordion":"l2B7r"}],"lTaTN":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./OfferShimmer":"1C6e9","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","react-router-dom":"9xmpe","../utils/useResMenu":"lTaTN","./OffersResMenu":"at0aa","./ResMenuItems":"jM200","./Shimmers/ResMenuShimmer":"ffMYk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantAccordion":"l2B7r","react":"21dqq"}],"lTaTN":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a28a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -63273,18 +63279,24 @@ var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _resAccordionBody = require("./ResAccordionBody");
 var _resAccordionBodyDefault = parcelHelpers.interopDefault(_resAccordionBody);
 var _react = require("react");
-var _s = $RefreshSig$();
-const RestaurantAccordion = (resInfo)=>{
-    _s();
-    const [showItems, setShowItems] = (0, _react.useState)(true);
-    // const category =
-    //   resInfo.resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
-    //     (v, i, arr) =>
-    //       v?.card?.card?.["@type"] ===
-    //       "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
-    //   );
-    const handleClick = ()=>{
-        setShowItems(!showItems);
+const RestaurantAccordion = ({ resInfo, showItems, setShowIndex })=>{
+    /* const [showItems, setShowItems] = useState(true);
+
+  // const category =
+  //   resInfo.resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
+  //     (v, i, arr) =>
+  //       v?.card?.card?.["@type"] ===
+  //       "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  //   );
+
+  const handleClick = () => {
+    setShowItems(!showItems);
+  };
+
+  console.log()
+  const {resInfo,showItems} = props
+  console.log(showItems) */ const handleClick = ()=>{
+        setShowIndex();
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -63297,14 +63309,14 @@ const RestaurantAccordion = (resInfo)=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: "font-extrabold text-lg text-text-color tracking-wider",
                                 children: [
-                                    resInfo?.resInfo?.card.card.title,
+                                    resInfo?.card.card.title,
                                     " (",
-                                    resInfo?.resInfo?.card.card.itemCards.length,
+                                    resInfo?.card.card.itemCards.length,
                                     ")"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestaurantAccordion.js",
-                                lineNumber: 33,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -63313,54 +63325,53 @@ const RestaurantAccordion = (resInfo)=>{
                                     icon: (0, _freeSolidSvgIcons.faChevronUp)
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurantAccordion.js",
-                                    lineNumber: 39,
+                                    lineNumber: 46,
                                     columnNumber: 17
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
                                     icon: (0, _freeSolidSvgIcons.faChevronDown)
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurantAccordion.js",
-                                    lineNumber: 41,
+                                    lineNumber: 48,
                                     columnNumber: 17
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantAccordion.js",
-                                lineNumber: 37,
+                                lineNumber: 44,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantAccordion.js",
-                        lineNumber: 29,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, undefined),
                     showItems && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resAccordionBodyDefault.default), {
-                        resList: resInfo?.resInfo?.card.card.itemCards
+                        resList: resInfo?.card.card.itemCards
                     }, void 0, false, {
                         fileName: "src/components/RestaurantAccordion.js",
-                        lineNumber: 46,
+                        lineNumber: 53,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "bg-hr-line h-2"
+                        className: "bg-hr-line h-5"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantAccordion.js",
-                        lineNumber: 48,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantAccordion.js",
-                lineNumber: 28,
+                lineNumber: 36,
                 columnNumber: 9
             }, undefined)
-        }, resInfo?.resInfo?.card.card.title, false, {
+        }, resInfo?.card.card.title, false, {
             fileName: "src/components/RestaurantAccordion.js",
-            lineNumber: 27,
+            lineNumber: 35,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
-_s(RestaurantAccordion, "olBfws2SNLY9NVqKiHGEeJ8dwiA=");
 _c = RestaurantAccordion;
 exports.default = RestaurantAccordion;
 var _c;
@@ -63385,9 +63396,9 @@ var _veg = require("./Veg");
 var _vegDefault = parcelHelpers.interopDefault(_veg);
 var _nonVeg = require("./NonVeg");
 var _nonVegDefault = parcelHelpers.interopDefault(_nonVeg);
-const ResAccordionBody = (resList)=>{
+const ResAccordionBody = ({ resList })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: resList.resList.map((v, i, arr)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: resList.map((v, i, arr)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "border-b-2",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex justify-between pb-16",
@@ -63453,8 +63464,17 @@ const ResAccordionBody = (resList)=>{
                                     className: "absolute bottom-0",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         className: "bg-white w-40 h-10 rounded-lg text-green-600 shadow-md shadow-white hover:scale-95",
-                                        children: "ADD +"
-                                    }, void 0, false, {
+                                        children: [
+                                            "ADD ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sup", {
+                                                children: "+"
+                                            }, void 0, false, {
+                                                fileName: "src/components/ResAccordionBody.js",
+                                                lineNumber: 36,
+                                                columnNumber: 23
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/components/ResAccordionBody.js",
                                         lineNumber: 35,
                                         columnNumber: 17

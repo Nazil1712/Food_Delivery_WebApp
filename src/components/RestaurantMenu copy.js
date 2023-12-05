@@ -18,6 +18,7 @@ const RestaurantMenu = () => {
   const params = useParams();
   const { resId } = params;
 
+  wkjdwbqdjiwnjwdnj
   const fetchMenu = async () => {
     const data = await fetch(RES_MENU_ITEMS_URL + resId);
 

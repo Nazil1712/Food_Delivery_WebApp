@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ResAccordionBody from "./ResAccordionBody";
 import { useState } from "react";
 
-const RestaurantAccordion = (resInfo) => {
-  const [showItems, setShowItems] = useState(true);
+const RestaurantAccordion = ({ resInfo, showItems, setShowIndex }) => {
+  /* const [showItems, setShowItems] = useState(true);
 
   // const category =
   //   resInfo.resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
@@ -22,17 +22,24 @@ const RestaurantAccordion = (resInfo) => {
     setShowItems(!showItems);
   };
 
+  console.log()
+  const {resInfo,showItems} = props
+  console.log(showItems) */
+
+  const handleClick = () => {
+    setShowIndex();
+  };
+
   return (
     <>
-      <div key={resInfo?.resInfo?.card.card.title}>
+      <div key={resInfo?.card.card.title}>
         <div>
           <div
             className="w-[50vw] flex justify-between cursor-pointer"
             onClick={handleClick}
           >
             <span className="font-extrabold text-lg text-text-color tracking-wider">
-              {resInfo?.resInfo?.card.card.title} (
-              {resInfo?.resInfo?.card.card.itemCards.length})
+              {resInfo?.card.card.title} ({resInfo?.card.card.itemCards.length})
             </span>
             <span className="mr-4">
               {showItems ? (
@@ -43,9 +50,9 @@ const RestaurantAccordion = (resInfo) => {
             </span>
           </div>
           {showItems && (
-            <ResAccordionBody resList={resInfo?.resInfo?.card.card.itemCards} />
+            <ResAccordionBody resList={resInfo?.card.card.itemCards} />
           )}
-          <div className="bg-hr-line h-2"></div>
+          <div className="bg-hr-line h-5"></div>
         </div>
       </div>
     </>

@@ -7,12 +7,15 @@ import OffersResMenu from "./OffersResMenu";
 import ResMenuItems from "./ResMenuItems";
 import ResMenuShimmer from "./Shimmers/ResMenuShimmer";
 import RestaurantAccordion from "./RestaurantAccordion";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
   const params = useParams();
   const { resId } = params;
-
   const resInfo = useResMenu(resId);
+
+  // default value 0 ==> indicates that 0th index Accordion will be true by default
+  const [showIndex,setShowIndex] = useState(0);
 
   if (resInfo == null) {
     return <ResMenuShimmer />;
@@ -84,7 +87,13 @@ const RestaurantMenu = () => {
       </div> */}
 
       {category.map((v, i, arr) => (
-        <RestaurantAccordion resInfo={v} />
+        // Controlled component
+        <RestaurantAccordion
+          key={v.card.card.title}
+          resInfo={v}
+          showItems={i==showIndex? true:false}
+          setShowIndex={()=>setShowIndex(i)}
+        />
       ))}
     </div>
   );

@@ -1,10 +1,10 @@
 import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 
-const ResAccordionBody = (resList) => {
+const ResAccordionBody = ({resList}) => {
   return (
     <>
-      {resList.resList.map((v, i, arr) => (
+      {resList.map((v, i, arr) => (
         <div key={v.card.info.id} className="border-b-2">
           <div className="flex justify-between pb-16">
             <div className="w-8/12">
@@ -33,7 +33,7 @@ const ResAccordionBody = (resList) => {
               />
               <div className="absolute bottom-0">
                 <button className="bg-white w-40 h-10 rounded-lg text-green-600 shadow-md shadow-white hover:scale-95">
-                  ADD +
+                  ADD <sup>+</sup>
                 </button>
               </div>
             </div>
