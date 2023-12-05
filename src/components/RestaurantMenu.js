@@ -29,6 +29,14 @@ const RestaurantMenu = () => {
     costForTwoMessage,
   } = resInfo?.cards[0]?.card?.card?.info;
 
+  const category =
+    resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
+      (v, i, arr) =>
+        v?.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+
+  // console.log(category)
 
   return (
     <div className="res-menu-container">
@@ -75,7 +83,9 @@ const RestaurantMenu = () => {
         <ResMenuItems resInfo={resInfo} />
       </div> */}
 
-      <RestaurantAccordion resInfo={resInfo}/>
+      {category.map((v, i, arr) => (
+        <RestaurantAccordion resInfo={v} />
+      ))}
     </div>
   );
 };

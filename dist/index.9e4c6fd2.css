@@ -324,6 +324,14 @@ img, video {
   height: 20rem;
 }
 
+.h-1 {
+  height: .25rem;
+}
+
+.h-2 {
+  height: .5rem;
+}
+
 .w-3\/12 {
   width: 25%;
 }
@@ -423,6 +431,11 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-hr-line {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 246 / var(--tw-bg-opacity));
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -477,6 +490,14 @@ img, video {
 
 .tracking-wide {
   letter-spacing: .025em;
+}
+
+.tracking-widest {
+  letter-spacing: .1em;
+}
+
+.tracking-wider {
+  letter-spacing: .05em;
 }
 
 .text-gray-400 {
