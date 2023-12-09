@@ -1,17 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
-import { faSearch} from "@fortawesome/free-solid-svg-icons";
+import { useContext, useEffect, useState } from "react";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { resData } from "../utils/mockData";
 import { RES_IMG_URL } from "../utils/constants";
 import BodyShimmer from "./Shimmers/BodyShimmer";
 import { Link } from "react-router-dom";
-import RestauratCard , {withPromotedLabel} from "./RestaurantCard";
+import RestauratCard, { withPromotedLabel } from "./RestaurantCard";
+import UserContext from "../utils/UserContext";
 
 const BodyShimm2 = () => {
   const [resStateData, setresStateData] = useState([]);
   const [myfilteredRestaurant, setMyfilteredRestaurant] = useState([]);
 
-  console.log(resStateData)
+  console.log(resStateData);
 
   const RestaurantCardPromoted = withPromotedLabel(RestauratCard);
 
@@ -54,6 +55,8 @@ const BodyShimm2 = () => {
     setMyfilteredRestaurant(fastRestaurant);
   };
 
+  const { loggedInUserName, setUserName } = useContext(UserContext);
+
   return resStateData.length == 0 ? (
     <BodyShimmer />
   ) : (
@@ -82,6 +85,16 @@ const BodyShimm2 = () => {
         <button className="filter-btn filter-btn2" onClick={handleFastDelv}>
           Fast Delivery
         </button>
+        <div>
+          <label>UserName : </label>
+          <input
+            className="rounded-3xl h-10 border border-gray-500 shadow-gray shadow-xl ml-1 outline-none p-4 "
+            value={loggedInUserName}
+            onChange={(e) => {
+              setUserName(e.target.value);
+            }}
+          />
+        </div>
       </div>
       <div className="res-container">
         {myfilteredRestaurant.map((v, i, arr) => (
@@ -100,7 +113,7 @@ const BodyShimm2 = () => {
             />
 
             {/* Beacuse newer version of API doesn't have promoted feature hence we are not adding it, but if it had then we could render our ResCard like this! */}
-            {/* {data.label.promted ? <RestaurantCardPromoted/> : <RestauratCard/>} */}``
+            {/* {data.label.promted ? <RestaurantCardPromoted/> : <RestauratCard/>} */}
 
             {/* Just trying to render ResCard with promoted label , to see how it looks! */}
             {/* <RestaurantCardPromoted
@@ -111,17 +124,12 @@ const BodyShimm2 = () => {
               delvTime={v.info.sla.deliveryTime}
               v={v}
             /> */}
-
-
           </Link>
         ))}
       </div>
     </div>
   );
 };
-
-
-
 
 export default BodyShimm2;
 export { RestauratCard };

@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import {
   faMagnifyingGlass,
   faPercent,
   faHandshakeAngle,
   faSignIn,
   faCartShopping,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { LOGO_URL } from "../utils/constants";
@@ -13,6 +14,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import OfflineMsg from "./OfflineMsg";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Sign In");
@@ -32,6 +34,8 @@ const Header = () => {
     }
   };
 
+  const data = useContext(UserContext);
+
   return (
     <div className="header">
       <div className="header-container">
@@ -40,8 +44,12 @@ const Header = () => {
         </div>
         <div className="nav-items">
           <ul>
+            <li>Online Status : {onlineStatus ? "🟩" : "🔴"}</li>
             <li>
-              Online Status : {onlineStatus ? "🟩":"🔴"}
+              <Link to={'/home'}>
+                <FontAwesomeIcon icon={faHome}/>
+                Home
+              </Link>
             </li>
             <li>
               <Link to="/Search">
@@ -71,6 +79,7 @@ const Header = () => {
                 <FontAwesomeIcon icon={faCartShopping} /> Cart
               </Link>
             </li>
+            <p>{data.loggedInUserName}</p>
           </ul>
         </div>
       </div>

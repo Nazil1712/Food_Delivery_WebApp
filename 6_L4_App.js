@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
@@ -26,22 +26,34 @@ import ResMenuShimmer from "./src/components/Shimmers/ResMenuShimmer";
 import ErrorElement from "./src/components/ErrorElement";
 import BodyShimmer from "./src/components/Shimmers/BodyShimmer";
 import ImgLayoutShimmer from "./src/components/ImgLayoutShimmer";
+import UserContext from "./src/utils/UserContext";
 // import Grocery from "./src/components/Grocery";
 
 // Lazy Loading
 const Grocery = lazy(() => import("./src/components/Grocery"));
 
 const AppLayout = () => {
+  // ------ How to Pass new Context --------
+
+  //Assume Authentication code
+
+  const [userName, setUserName] = useState();
+
+  useEffect(() => {
+    // Assume Make an API call and fetching userName
+    const data = {
+      name: "Nazil Dhalwala",
+    };
+    setUserName(data.name);
+  }, []);
+
   return (
-    <div className="app">
-      <Header />
-
-      {/* <OffersShimm3/>
-      <ImgLayoutShimm3/>
-      <BodyShimm2/> */}
-
-      <Outlet />
-    </div>
+    <UserContext.Provider value={{ loggedInUserName: userName, setUserName }}>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
+    </UserContext.Provider>
   );
 };
 
@@ -104,9 +116,9 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: '/shimmer',
-        element: <ImgLayoutShimmer/>
-      }
+        path: "/shimmer",
+        element: <ImgLayoutShimmer />,
+      },
     ],
     errorElement: <ErrorElement />,
   },

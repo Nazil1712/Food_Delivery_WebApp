@@ -8,7 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ResAccordionBody from "./ResAccordionBody";
 import { useState } from "react";
 
-const RestaurantAccordion = ({ resInfo, showItems, setShowIndex }) => {
+const RestaurantAccordion = ({
+  resInfo,
+  showItems,
+  setShowItems,
+  showIndex,
+  setShowIndex,
+  index
+}) => {
   /* const [showItems, setShowItems] = useState(true);
 
   // const category =
@@ -26,8 +33,9 @@ const RestaurantAccordion = ({ resInfo, showItems, setShowIndex }) => {
   const {resInfo,showItems} = props
   console.log(showItems) */
 
+
   const handleClick = () => {
-    setShowIndex();
+    showItems? setShowIndex(null) : setShowIndex(index)
   };
 
   return (

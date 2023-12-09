@@ -1,6 +1,7 @@
 import { Component } from "react";
 import UserClass from "./UserClass";
 import UserClass2 from "./UserClass2";
+import UserContext from "../utils/UserContext";
 
 class HelpClass extends Component {
   constructor(props) {
@@ -27,6 +28,11 @@ class HelpClass extends Component {
 
         {/* Fetching API DATA */}
         <UserClass2/>
+
+        {/* Using Context */}
+        <UserContext.Consumer>
+          {(data)=><h1>Context: {data.loggedInUserName}</h1>}
+        </UserContext.Consumer>
       </>
     );
   }

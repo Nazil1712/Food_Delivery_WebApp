@@ -15,7 +15,8 @@ const RestaurantMenu = () => {
   const resInfo = useResMenu(resId);
 
   // default value 0 ==> indicates that 0th index Accordion will be true by default
-  const [showIndex,setShowIndex] = useState(0);
+  const [showIndex, setShowIndex] = useState(0);
+  const [showItems, setShowItems] = useState(false);
 
   if (resInfo == null) {
     return <ResMenuShimmer />;
@@ -91,8 +92,11 @@ const RestaurantMenu = () => {
         <RestaurantAccordion
           key={v.card.card.title}
           resInfo={v}
-          showItems={i==showIndex? true:false}
-          setShowIndex={()=>setShowIndex(i)}
+          showItems={i == showIndex ? true : false}
+          // setShowItems={()=>setShowItems(!showItems)}
+          // setShowIndex={() => setShowIndex(i)}
+          setShowIndex={(i)=>setShowIndex(i)}
+          index={i}
         />
       ))}
     </div>
