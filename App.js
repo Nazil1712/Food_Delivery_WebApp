@@ -19,7 +19,7 @@ import ImgLayoutShimm3 from "./src/components/ImgLayout";
 import OffersShimm3 from "./src/components/Offfers";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 import User from "./src/components/Helpers/User";
-import HelpClass from "./src/components/Helpers/HelpClass";
+import HelpClass from "./src/components/HelpClass";
 import CollectionPage2 from "./src/components/OffersRestaurant";
 import CollectionPageShimmer from "./src/components/Shimmers/OffersResShimmer";
 import ResMenuShimmer from "./src/components/Shimmers/ResMenuShimmer";
