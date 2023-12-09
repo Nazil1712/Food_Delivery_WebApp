@@ -1,7 +1,7 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ResCardCollection = ({
+const OffersResCard = ({
   foodImg,
   resName,
   cuisines,
@@ -27,4 +27,4 @@ const ResCardCollection = ({
 };
 
 
-export default ResCardCollection;
+export default OffersResCard;

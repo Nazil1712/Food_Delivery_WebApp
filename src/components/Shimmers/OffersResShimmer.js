@@ -13,7 +13,7 @@ const CollectionResCardShimmer = () => {
   );
 };
 
-const CollectionPageShimmer = () => {
+const OffersResShimmer = () => {
   return (
     <div className="collection-container-shimm">
       <div className="collection-header-shimm">
@@ -44,4 +44,4 @@ const CollectionPageShimmer = () => {
   );
 };
 
-export default CollectionPageShimmer;
+export default OffersResShimmer;

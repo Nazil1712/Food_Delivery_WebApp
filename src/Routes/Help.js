@@ -1,5 +1,5 @@
-import User from "./User";
-import UserClass from "./UserClass";
+import User from "../components/Helpers/User";
+import UserClass from "../components/Helpers/UserClass";
 
 const Help = () =>{
     return (

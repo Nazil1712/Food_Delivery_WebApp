@@ -13,7 +13,7 @@ import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-import OfflineMsg from "./OfflineMsg";
+import OfflineMsg from "./Helpers/OfflineMsg";
 import UserContext from "../utils/UserContext";
 
 const Header = () => {

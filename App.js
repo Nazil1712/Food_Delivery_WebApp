@@ -10,27 +10,27 @@ import Body from "./src/components/Body";
 
 // Shimmers
 import Header from "./src/components/Header";
-import BodyShimm2 from "./src/components/BodyShimm2";
-import Help from "./src/components/Help";
-import Cart from "./src/components/Cart";
-import Search from "./src/components/Search";
-import ImgLayoutShimm3 from "./src/components/ImgLayoutShimm3";
-import OffersShimm3 from "./src/components/OfffersShimm3";
-import OfferRoute from "./src/components/offerRoute";
+import BodyShimm2 from "./src/components/Body";
+import Help from "./src/Routes/Help";
+import Cart from "./src/Routes/Cart";
+import Search from "./src/Routes/Search";
+import OfferRoute from "./src/Routes/OfferRoute";
+import ImgLayoutShimm3 from "./src/components/ImgLayout";
+import OffersShimm3 from "./src/components/Offfers";
 import RestaurantMenu from "./src/components/RestaurantMenu";
-import User from "./src/components/User";
-import HelpClass from "./src/components/HelpClass";
-import CollectionPage2 from "./src/components/CollectionPage2";
-import CollectionPageShimmer from "./src/components/Shimmers/CollectionPageShimmer";
+import User from "./src/components/Helpers/User";
+import HelpClass from "./src/components/Helpers/HelpClass";
+import CollectionPage2 from "./src/components/OffersRestaurant";
+import CollectionPageShimmer from "./src/components/Shimmers/OffersResShimmer";
 import ResMenuShimmer from "./src/components/Shimmers/ResMenuShimmer";
-import ErrorElement from "./src/components/ErrorElement";
+import ErrorElement from "./src/components/Helpers/ErrorElement";
 import BodyShimmer from "./src/components/Shimmers/BodyShimmer";
-import ImgLayoutShimmer from "./src/components/ImgLayoutShimmer";
+import ImgLayoutShimmer from "./src/components/Shimmers/ImgLayoutShimmer";
 import UserContext from "./src/utils/UserContext";
 // import Grocery from "./src/components/Grocery";
 
 // Lazy Loading
-const Grocery = lazy(() => import("./src/components/Grocery"));
+const Grocery = lazy(() => import("./src/components/Helpers/Grocery"));
 
 const AppLayout = () => {
   // ------ How to Pass new Context --------

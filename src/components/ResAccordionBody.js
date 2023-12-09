@@ -1,5 +1,5 @@
-import Veg from "./Veg";
-import NonVeg from "./NonVeg";
+import Veg from "./Helpers/Veg";
+import NonVeg from "./Helpers/NonVeg";
 
 const ResAccordionBody = ({resList}) => {
   return (

@@ -1,4 +1,4 @@
-const OffersResMenu = ({ resInfo }) => {
+const ResMenuOffers = ({ resInfo }) => {
   const offBoxList =
     resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.offers;
 
@@ -16,4 +16,4 @@ const OffersResMenu = ({ resInfo }) => {
   );
 };
 
-export default OffersResMenu;
+export default ResMenuOffers;

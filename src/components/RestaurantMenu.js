@@ -1,9 +1,9 @@
-import OfferShimmer from "./OfferShimmer";
+import OfferShimmer from "./Shimmers/OfferShimmer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faStar } from "@fortawesome/free-solid-svg-icons";
 import { useParams } from "react-router-dom";
 import useResMenu from "../utils/useResMenu";
-import OffersResMenu from "./OffersResMenu";
+import OffersResMenu from "./ResMenuOffers";
 import ResMenuItems from "./ResMenuItems";
 import ResMenuShimmer from "./Shimmers/ResMenuShimmer";
 import RestaurantAccordion from "./RestaurantAccordion";
@@ -16,7 +16,7 @@ const RestaurantMenu = () => {
 
   // default value 0 ==> indicates that 0th index Accordion will be true by default
   const [showIndex, setShowIndex] = useState(0);
-  const [showItems, setShowItems] = useState(false);
+  // const [showItems, setShowItems] = useState(false);
 
   if (resInfo == null) {
     return <ResMenuShimmer />;

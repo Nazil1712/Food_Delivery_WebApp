@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { RestauratCard } from "./BodyShimm2";
+import { RestauratCard } from "./Body";
 import {
   COLLECTION_API_URL1,
   COLLECTION_API_URL2,
   COLLECTION_RES_IMG_URL,
 } from "../utils/constants";
-import ResCardCollection from "./ResCardCollection";
+import ResCardCollection from "./OffersResCard";
 import { Link, useParams } from "react-router-dom";
-import CollectionPageShimmer from "./Shimmers/CollectionPageShimmer";
+import CollectionPageShimmer from "./Shimmers/OffersResShimmer";
 
-const CollectionPage2 = () => {
+const OffersRestaurant = () => {
   const { resId } = useParams();
   const [resData, setResData] = useState([]);
   const [resList, setResList] = useState([]);
@@ -64,4 +64,4 @@ const CollectionPage2 = () => {
   );
 };
 
-export default CollectionPage2;
+export default OffersRestaurant;

@@ -1,5 +1,5 @@
-import NonVeg from "./NonVeg";
-import Veg from "./Veg";
+import NonVeg from "./Helpers/NonVeg";
+import Veg from "./Helpers/Veg";
 
 const ResMenuItems = ({ resInfo }) => {
   // console.log(resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards)

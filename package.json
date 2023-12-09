@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is Hello React created By Nazil",
   "scripts": {
-    "start": "parcel 5_L3.html",
-    "build": "parcel build 5_L3.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {

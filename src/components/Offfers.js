@@ -8,11 +8,11 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
-import OfferShimmer from "./OfferShimmer";
+import OfferShimmer from "./Shimmers/OfferShimmer";
 import { Link } from "react-router-dom";
 import useOfferLayout from "../utils/useOfferLayout";
 
-const OffersShimm3 = () => {
+const Offers = () => {
   const myOffers = useOfferLayout()
 
   const scrollLeft = () =>{
@@ -65,4 +65,4 @@ const OffersShimm3 = () => {
   );
 };
 
-export default OffersShimm3;
+export default Offers;
