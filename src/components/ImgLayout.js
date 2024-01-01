@@ -11,6 +11,7 @@ import { Suspense } from "react";
 
 const ImgLayout = () => {
   const myImgLayout = useImgLayout();
+  // console.log(myImgLayout)
 
   const scrollLeft = () =>{
     let slider = document.getElementById("slider")

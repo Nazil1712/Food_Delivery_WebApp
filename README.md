@@ -1,3 +1,6 @@
+<b><a href="https://fooddeliverywebappbynazil.netlify.app/">Click me to see Live Project</a></b>
+
+
 # React 
 - Parcel
 - Dev Build
@@ -102,3 +105,10 @@ useEffect()
 
 
 
+# Redux Toolkit
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (Cart Slice)
+- Dispatch an action
+- Read data using selector

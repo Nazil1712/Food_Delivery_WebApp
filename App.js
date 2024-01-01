@@ -27,6 +27,9 @@ import ErrorElement from "./src/components/Helpers/ErrorElement";
 import BodyShimmer from "./src/components/Shimmers/BodyShimmer";
 import ImgLayoutShimmer from "./src/components/Shimmers/ImgLayoutShimmer";
 import UserContext from "./src/utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./src/utils/AppStore";
+import CartSlice from "./src/utils/cartSlice";
 // import Grocery from "./src/components/Grocery";
 
 // Lazy Loading
@@ -48,12 +51,14 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ loggedInUserName: userName, setUserName }}>
-      <div className="app">
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUserName: userName, setUserName }}>
+        <div className="app">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -66,7 +71,7 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: (
           <>
-            <OffersShimm3 />
+            {/* <OffersShimm3 /> */}
             <ImgLayoutShimm3 />
             <BodyShimm2 />
           </>
@@ -76,7 +81,7 @@ const appRouter = createBrowserRouter([
         path: "/home",
         element: (
           <>
-            <OffersShimm3 />
+            {/* <OffersShimm3 /> */}
             <ImgLayoutShimm3 />
             <BodyShimm2 />
           </>
@@ -116,9 +121,9 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "/shimmer",
-        element: <ImgLayoutShimmer />,
-      },
+        path:'/store',
+        element: <CartSlice/>
+      }
     ],
     errorElement: <ErrorElement />,
   },
