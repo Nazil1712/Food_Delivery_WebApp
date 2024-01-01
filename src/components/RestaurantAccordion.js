@@ -16,24 +16,6 @@ const RestaurantAccordion = ({
   setShowIndex,
   index
 }) => {
-  /* const [showItems, setShowItems] = useState(true);
-
-  // const category =
-  //   resInfo.resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
-  //     (v, i, arr) =>
-  //       v?.card?.card?.["@type"] ===
-  //       "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
-  //   );
-
-  const handleClick = () => {
-    setShowItems(!showItems);
-  };
-
-  console.log()
-  const {resInfo,showItems} = props
-  console.log(showItems) */
-
-
   const handleClick = () => {
     showItems? setShowIndex(null) : setShowIndex(index)
   };

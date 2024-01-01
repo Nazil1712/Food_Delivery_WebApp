@@ -5,7 +5,7 @@ import {
   COLLECTION_API_URL2,
   COLLECTION_RES_IMG_URL,
 } from "../utils/constants";
-import ResCardCollection from "./OffersResCard";
+import OffersResCard from "./OffersResCard";
 import { Link, useParams } from "react-router-dom";
 import CollectionPageShimmer from "./Shimmers/OffersResShimmer";
 
@@ -22,6 +22,8 @@ const OffersRestaurant = () => {
     json = json.data.cards.slice(3, json.length);
     setResList(json);
   };
+
+  // console.log(resList)
 
   useEffect(() => {
     fetchData();
@@ -46,7 +48,7 @@ const OffersRestaurant = () => {
               key={v.card.card.info.id}
               className=".link-tag"
             >
-              <ResCardCollection
+              <OffersResCard
                 key={v.card.card.info.id}
                 foodImg={
                   COLLECTION_RES_IMG_URL + v.card.card.info.cloudinaryImageId
@@ -55,6 +57,7 @@ const OffersRestaurant = () => {
                 cuisines={v.card.card.info.cuisines}
                 resRatings={v.card.card.info.avgRating}
                 delvTime={v.card.card.info.sla.deliveryTime}
+                aggregatedDiscountInfoV3={v.card.card.info.aggregatedDiscountInfoV3}
               />
             </Link>
           ))}

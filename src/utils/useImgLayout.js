@@ -9,7 +9,8 @@ const useImgLayout = () => {
     );
 
     const json = await data.json();
-    setMyImgLayout(json.data.cards[1].card.card.imageGridCards.info);
+    // console.log(json)
+    setMyImgLayout(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
   };
 
   useEffect(() => {

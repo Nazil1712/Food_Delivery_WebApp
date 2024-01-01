@@ -12,7 +12,7 @@ const Body = () => {
   const [resStateData, setresStateData] = useState([]);
   const [myfilteredRestaurant, setMyfilteredRestaurant] = useState([]);
 
-  console.log(resStateData);
+  // console.log(resStateData);
 
   const RestaurantCardPromoted = withPromotedLabel(RestauratCard);
 
@@ -25,10 +25,10 @@ const Body = () => {
 
     const json = await data.json();
     setresStateData(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setMyfilteredRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 

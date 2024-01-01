@@ -7,11 +7,16 @@ const OffersResCard = ({
   cuisines,
   resRatings,
   delvTime,
+  aggregatedDiscountInfoV3,
 }) => {
   return (
     <div className="res-card-coll hover:scale-95">
-      <div className="res-logo-coll">
-        <img className="res-img-coll" src={foodImg}></img>
+      <div className="res-logo-coll relative">
+        {/* {console.log(aggregatedDiscountInfoV3?.header)} */}
+        <img className="res-img-coll " src={foodImg}></img>
+        {aggregatedDiscountInfoV3?.header && (
+          <div className="absolute bottom-0 text-white font-extrabold text-xl pl-2">{aggregatedDiscountInfoV3?.header}</div>
+        )}
       </div>
       <div>
         <h3 className="text-xl font-bold">{resName}</h3>
@@ -25,6 +30,5 @@ const OffersResCard = ({
     </div>
   );
 };
-
 
 export default OffersResCard;

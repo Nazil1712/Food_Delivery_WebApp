@@ -15,6 +15,8 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import OfflineMsg from "./Helpers/OfflineMsg";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
+import appStore from "../utils/AppStore";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Sign In");
@@ -35,6 +37,11 @@ const Header = () => {
   };
 
   const data = useContext(UserContext);
+
+
+  // Subscribing to the store using Selector
+  const cartItems = useSelector((appStore)=>appStore.cart.items)
+  // console.log(cartItems)
 
   return (
     <div className="header">
@@ -76,7 +83,8 @@ const Header = () => {
             </li>
             <li>
               <Link to="/Cart">
-                <FontAwesomeIcon icon={faCartShopping} /> Cart
+                <FontAwesomeIcon icon={faCartShopping} /> Cart -
+                <span> {cartItems.length} </span>
               </Link>
             </li>
             <p>{data.loggedInUserName}</p>
