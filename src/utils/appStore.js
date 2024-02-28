@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./cartSlice"
 
-const appStore = configureStore({
+const AppStore = configureStore({
     // App's Big Reducer
     // This contains small reducers in it
     reducer : {
@@ -10,4 +10,4 @@ const appStore = configureStore({
 });
 
 
-export default appStore;
+export default AppStore;
