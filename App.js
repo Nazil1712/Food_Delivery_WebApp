@@ -29,7 +29,6 @@ import ImgLayoutShimmer from "./src/components/Shimmers/ImgLayoutShimmer";
 import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import appstore from "./src/utils/appstore";
-import cartSlice from "./src/utils/cartSlice";
 // import Grocery from "./src/components/Grocery";
 
 // Lazy Loading
@@ -119,10 +118,6 @@ const appRouter = createBrowserRouter([
             <Grocery />
           </Suspense>
         ),
-      },
-      {
-        path:'/store',
-        element: <cartSlice/>
       }
     ],
     errorElement: <ErrorElement />,
