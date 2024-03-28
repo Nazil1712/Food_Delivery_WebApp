@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import ResMenuItems from "./ResMenuItems";
-import AppStore from "../utils/AppStore";
+import appstore from "../utils/appstore";
 
 const CartRestaurant = () => {
-  const cartItems = useSelector((AppStore) => AppStore.cart.items);
+  const cartItems = useSelector((appstore) => appstore.cart.items);
   console.log(cartItems);
 
   return (

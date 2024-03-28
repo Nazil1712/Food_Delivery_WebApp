@@ -16,7 +16,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import OfflineMsg from "./Helpers/OfflineMsg";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
-import AppStore from "../utils/AppStore";
+import appstore from "../utils/appstore";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Sign In");
@@ -40,7 +40,7 @@ const Header = () => {
 
 
   // Subscribing to the store using Selector
-  const cartItems = useSelector((AppStore)=>AppStore.cart.items)
+  const cartItems = useSelector((appstore)=>appstore.cart.items)
   // console.log(cartItems)
 
   return (

@@ -28,7 +28,7 @@ import BodyShimmer from "./src/components/Shimmers/BodyShimmer";
 import ImgLayoutShimmer from "./src/components/Shimmers/ImgLayoutShimmer";
 import UserContext from "./src/utils/UserContext";
 import { Provider } from "react-redux";
-import AppStore from "./src/utils/AppStore";
+import appstore from "./src/utils/appstore";
 import cartSlice from "./src/utils/cartSlice";
 // import Grocery from "./src/components/Grocery";
 
@@ -51,7 +51,7 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <Provider store={AppStore}>
+    <Provider store={appstore}>
       <UserContext.Provider value={{ loggedInUserName: userName, setUserName }}>
         <div className="app">
           <Header />
